@@ -11,7 +11,10 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Appear,
+  CodePane,
+  Code
 } from "spectacle";
 
 // Import theme
@@ -22,9 +25,9 @@ require("normalize.css");
 
 const theme = createTheme(
   {
-    primary: "white",
-    secondary: "#1F2022",
-    tertiary: "#03A9FC",
+    primary: "black",
+    secondary: "#E0234E",
+    tertiary: "white",
     quaternary: "#CECECE"
   },
   {
@@ -43,8 +46,19 @@ export default class Presentation extends React.Component {
       >
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Un zeste de Nest 🍋
+            Un zeste de Nest 🚀
           </Heading>
+          <Text
+            textColor="lightgrey"
+            textSize="0.9em"
+            margin="70px 0px 0px"
+            bold
+          >
+            Meilleur Dev de France 2018
+          </Text>
+          <Text textColor="lightgrey" textSize="0.7em" margin="14px 0px 0px">
+            @cyril_lakech & @lauthieb
+          </Text>
         </Slide>
       </Deck>
     );

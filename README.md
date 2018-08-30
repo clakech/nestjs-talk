@@ -1,10 +1,10 @@
 # nestjs-talk
 
-Talk about [Nest Framework](https://nestjs.com)
+Talk about [Nest Framework](https://nestjs.com) 🚀
 
 ## Contents
 
-- [bbl-nestjs](#bbl-nestjs)
+- [nestjs-talk](#nestjs-talk)
     - [Contents](#contents)
     - [Reference](#reference)
     - [Getting Started](#getting-started)
