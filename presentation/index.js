@@ -39,7 +39,13 @@ const theme = createTheme(
 
 const images = {
   axa: require("../assets/axa.png"),
-  city: require("../assets/city.jpg")
+  city: require("../assets/city.jpg"),
+  desert: require("../assets/desert.jpg"),
+  fwkBack: require("../assets/fwk-back.png"),
+  nest: require("../assets/nest.png"),
+  production: require("../assets/production.gif"),
+  production2: require("../assets/production2.gif"),
+  unopinionated: require("../assets/unopinionated.gif")
 };
 
 function getImage(img) {
@@ -101,6 +107,146 @@ export default class Presentation extends React.Component {
           <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
             TODO
           </Text>
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={getImage("production")}
+          bgDarken={0.7}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Dev Front-end
+          </Heading>
+          <Appear>
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+              Productivité
+            </Text>
+          </Appear>
+          <Appear>
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+              Performance
+            </Text>
+          </Appear>
+          <Appear>
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+              Scalabilité
+            </Text>
+          </Appear>
+          <Appear>
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+              Architecture
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={getImage("production2")}
+          bgDarken={0.8}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Dev Back-end
+          </Heading>
+          <Appear>
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+              Productivité
+            </Text>
+          </Appear>
+          <Appear>
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+              Performance
+            </Text>
+          </Appear>
+          <Appear>
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+              Scalabilité
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={getImage("desert")}
+          bgDarken={0.5}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="white">
+            Architecture ?
+          </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={getImage("fwkBack")}>
+          <Heading
+            size={1}
+            caps
+            lineHeight={1}
+            textColor="secondary"
+            margin="0 0 480px 0"
+          >
+            L'existant
+          </Heading>
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={getImage("unopinionated")}
+          bgDarken={0.6}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="white">
+            UNOPINIONATED...
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Problèmes
+          </Heading>
+          <List textColor="quaternary" margin="40px 0 0 0">
+            <Appear>
+              <ListItem margin="10px 0 0 0">
+                Arborescence de fichiers non normée
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Difficilement testable</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">All in middlewares</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={["zoom"]}>
+          <Image src={getImage("nest")} margin="16px auto" />
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Sous le capot...
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem margin="10px 0 0 0">Opinionated (#angular)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Basé sur Express</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Ecrit en TypeScript</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">
+                Propose une réelle architecture
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">
+                Respecte les principes SOLID
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Facilite le DDD</ListItem>
+            </Appear>
+          </List>
         </Slide>
       </Deck>
     );
