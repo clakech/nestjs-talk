@@ -42,6 +42,8 @@ const images = {
   city: require("../assets/city.jpg"),
   desert: require("../assets/desert.jpg"),
   fwkBack: require("../assets/fwk-back.png"),
+  go: require("../assets/go.gif"),
+  happy: require("../assets/happy.gif"),
   nest: require("../assets/nest.png"),
   production: require("../assets/production.gif"),
   production2: require("../assets/production2.gif"),
@@ -247,6 +249,100 @@ export default class Presentation extends React.Component {
               <ListItem margin="10px 0 0 0">Facilite le DDD</ListItem>
             </Appear>
           </List>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={getImage("go")} />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Controllers
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Modules
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Middlewares
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Exception filters
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Pipes
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Testing
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgImage={getImage("happy")} />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Si vous avez encore faim...
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem margin="10px 0 0 0">Interceptors</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Guards</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">GraphQL</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">OpenAPI (Swagger)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Microservices</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Websockets</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Authentication</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">
+                Execution context (CLI, scripting...)
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("nest")} margin="16px auto" />
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Merci !
+          </Heading>
+          <Text textColor="lightgrey" textSize="1.2em" margin="60px 0 0 0">
+            Un zeste de Nest 🚀
+          </Text>
+          <Text textColor="lightgrey" textSize="0.9em" margin="20px 0 0 0" bold>
+            Meilleur Dev de France 2018
+          </Text>
+          <Text textColor="lightgrey" textSize="0.7em" margin="24px 0 0 0">
+            @cyril_lakech & @lauthieb
+          </Text>
+          <Image src={getImage("axa")} width="60" margin="16px auto" />
         </Slide>
       </Deck>
     );
