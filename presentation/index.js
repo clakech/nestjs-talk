@@ -321,6 +321,12 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Providers
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Modules
           </Heading>
         </Slide>
