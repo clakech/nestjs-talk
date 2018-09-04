@@ -3,23 +3,23 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
   Deck,
   Heading,
   ListItem,
   List,
-  Quote,
   Slide,
   Text,
   Appear,
-  CodePane,
-  Code,
   Image
 } from "spectacle";
 
+import CodeSlide from "spectacle-code-slide";
+
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
+
+import "prismjs/themes/prism-okaidia.css";
+import "./index.css";
 
 // Require CSS
 require("normalize.css");
@@ -38,16 +38,17 @@ const theme = createTheme(
 );
 
 const images = {
-  axa: require("../assets/axa.png"),
-  city: require("../assets/city.jpg"),
-  desert: require("../assets/desert.jpg"),
-  fwkBack: require("../assets/fwk-back.png"),
-  go: require("../assets/go.gif"),
-  happy: require("../assets/happy.gif"),
-  nest: require("../assets/nest.png"),
-  production: require("../assets/production.gif"),
-  production2: require("../assets/production2.gif"),
-  unopinionated: require("../assets/unopinionated.gif")
+  axa: require("../assets/images/axa.png"),
+  city: require("../assets/images/city.jpg"),
+  controllers: require("../assets/images/controllers.png"),
+  desert: require("../assets/images/desert.jpg"),
+  fwkBack: require("../assets/images/fwk-back.png"),
+  go: require("../assets/images/go.gif"),
+  happy: require("../assets/images/happy.gif"),
+  nest: require("../assets/images/nest.png"),
+  production: require("../assets/images/production.gif"),
+  production2: require("../assets/images/production2.gif"),
+  unopinionated: require("../assets/images/unopinionated.gif")
 };
 
 function getImage(img) {
@@ -66,10 +67,15 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Un zeste de Nest 🚀
           </Heading>
-          <Text textColor="lightgrey" textSize="0.9em" margin="60px 0 0 0" bold>
+          <Text
+            textColor="quaternary"
+            textSize="0.9em"
+            margin="60px 0 0 0"
+            bold
+          >
             Meilleur Dev de France 2018
           </Text>
-          <Text textColor="lightgrey" textSize="0.7em" margin="24px 0 0 0">
+          <Text textColor="quaternary" textSize="0.7em" margin="24px 0 0 0">
             @cyril_lakech & @lauthieb
           </Text>
           <Image src={getImage("axa")} width="60" margin="16px auto" />
@@ -259,6 +265,60 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={["slide"]}>
+          <Image src={getImage("controllers")} margin="16px auto" />
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/controllers.example")}
+          ranges={[
+            {
+              loc: [0, 7],
+              title: "Import de décorateurs"
+            },
+            { loc: [8, 9], title: "Declaration du contrôleur" },
+            { loc: [9, 10], note: "Création d'une classe CFPController" },
+            { loc: [11, 15], title: "Déclaration d'une route en GET" },
+            { loc: [16, 20], title: "Déclaration d'une route en PUT" }
+          ]}
+        />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Controllers ++
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                @Request() | @Response() | @Next()
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                (@Body | @Query | @Headers)(param?: string)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Route wildcards
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Codes de retours HTTP
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Gestion des erreurs
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Modules
@@ -333,13 +393,18 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Merci !
           </Heading>
-          <Text textColor="lightgrey" textSize="1.2em" margin="60px 0 0 0">
+          <Text textColor="quaternary" textSize="1.2em" margin="60px 0 0 0">
             Un zeste de Nest 🚀
           </Text>
-          <Text textColor="lightgrey" textSize="0.9em" margin="20px 0 0 0" bold>
+          <Text
+            textColor="quaternary"
+            textSize="0.9em"
+            margin="20px 0 0 0"
+            bold
+          >
             Meilleur Dev de France 2018
           </Text>
-          <Text textColor="lightgrey" textSize="0.7em" margin="24px 0 0 0">
+          <Text textColor="quaternary" textSize="0.7em" margin="24px 0 0 0">
             @cyril_lakech & @lauthieb
           </Text>
           <Image src={getImage("axa")} width="60" margin="16px auto" />
