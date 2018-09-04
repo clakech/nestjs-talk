@@ -338,10 +338,10 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 1],
-              title: "Import de décorateurs"
+              title: "Import d'Injectable"
             },
-            { loc: [7, 14], title: "Création de méthodes de service" },
-            { loc: [0, 15], title: "That's all !" }
+            { loc: [4, 5], title: "Création d'une classe CFPService" },
+            { loc: [7, 14], title: "Création de méthodes de service" }
           ]}
         />
 
@@ -352,6 +352,10 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/providers.example2")}
           ranges={[
             {
+              loc: [12, 13],
+              title: "Retour au CFPController"
+            },
+            {
               loc: [14, 15],
               title: "Injection du CFPService"
             },
@@ -359,6 +363,29 @@ export default class Presentation extends React.Component {
             { loc: [21, 25], title: "Utilisation du service via POST" }
           ]}
         />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Providers ++
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Personnalisés & asynchrones
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Valeurs calculées dynamiquement
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                @Inject
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
