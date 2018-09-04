@@ -1,0 +1,21 @@
+@Catch(NotFoundException)
+export class NotFoundExceptionFilter implements ExceptionFilter {  
+  constructor(private readonly loggerService: LoggerService) {}
+
+  catch(exception: HttpException, host: ArgumentsHost) {
+    const ctx = host.switchToHttp();
+    const response = ctx.getResponse();
+    const request = ctx.getRequest();
+    const status = exception.getStatus();
+    
+    this.loggerService.warn('Uncaught a not found exception', exception);
+
+    response
+      .status(status)
+      .json({
+        statusCode: status,
+        timestamp: new Date().toISOString(),
+        path: request.url,
+      });
+  }
+}

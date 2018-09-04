@@ -1,0 +1,10 @@
+@Get(':id')
+find(@Param('id') cfpId: string) {
+  const cfp = await this.cfpService.findOne({ cfpId });  
+
+  if (!cfp) {
+    throw new NotFoundException();
+  }
+
+  return cfp;
+}

@@ -520,6 +520,77 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/exception-filters.example1")}
+          ranges={[
+            {
+              loc: [0, 10],
+              title: "Retour dans notre contrôleur"
+            },
+            { loc: [5, 6], title: "Lancement d'une built-in exception" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/exception-filters.example2")}
+          ranges={[
+            {
+              loc: [0, 21],
+              title: "Création d'un filtre pour les 404"
+            },
+            { loc: [0, 1], title: "Utilisation de @Catch" },
+            { loc: [1, 2], title: "Classe implémentant ExceptionFilter" },
+            { loc: [2, 3], title: "Injection d'un service Logger" },
+            { loc: [4, 20], title: "Fonction catch" },
+            { loc: [5, 9], title: "Récupération de valeurs utiles" },
+            { loc: [10, 11], title: "Warning dans les logs" },
+            { loc: [12, 19], title: "Modification de la réponse" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/exception-filters.example3")}
+          ranges={[
+            {
+              loc: [0, 11],
+              title: "Retour dans notre contrôleur #oneMoreTime"
+            },
+            { loc: [0, 1], title: "Utilisation de @UseFilters" }
+          ]}
+        />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Exception filters ++
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Catch global via @Catch()
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                @UseFilters au niveau d'une classe
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Utilisation globale via app.useGlobalFilters
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Pipes
