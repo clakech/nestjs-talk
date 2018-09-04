@@ -9,6 +9,7 @@ Talk about [Nest Framework](https://nestjs.com) 🚀
     - [Reference](#reference)
     - [Getting Started](#getting-started)
     - [Build & Deployment](#build--deployment)
+    - [Notes](#notes)
 
 ## Reference
 
