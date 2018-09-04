@@ -1,0 +1,10 @@
+export class CreateCFPDto {  
+  @IsString()
+  @IsNotEmpty()
+  id: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(5)
+  url: string;
+}

@@ -49,6 +49,7 @@ const images = {
   middlewares: require("../assets/images/middlewares.png"),
   modules: require("../assets/images/modules.png"),
   nest: require("../assets/images/nest.png"),
+  pipes: require("../assets/images/pipes.png"),
   production: require("../assets/images/production.gif"),
   production2: require("../assets/images/production2.gif"),
   providers: require("../assets/images/providers.png"),
@@ -600,6 +601,62 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Pipes
           </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("pipes")} margin="16px auto" />
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/pipes.example1")}
+          ranges={[
+            {
+              loc: [0, 11],
+              title: "Validation d'un CFP avant création"
+            },
+            { loc: [1, 2], title: "Utilisation de ValidationPipe" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/pipes.example2")}
+          ranges={[
+            {
+              loc: [0, 11],
+              title: "Zoom sur CreateCFPDto"
+            },
+            { loc: [1, 4], title: "Utilisation de décorateurs" },
+            { loc: [5, 9], title: "Utilisation de décorateurs" }
+          ]}
+        />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Pipes ++
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Autre built-in: ParseIntPipe
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Personnalisation (implements PipeTransform)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Utilisation globale via app.useGlobalPipes()
+              </ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={["fade"]}>

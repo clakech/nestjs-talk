@@ -1,0 +1,5 @@
+@Post()
+@UsePipes(new ValidationPipe())
+create(@Body() createCFPDto) {
+  return `This action creates the CFP (${createCFPDto.url})`;
+}
