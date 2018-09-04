@@ -1,0 +1,11 @@
+import { CFPController } from './cfp.controller';
+import { CFPService } from './cfp.service';
+import { Module } from '@nestjs/common';
+
+@Module({
+  imports: [],
+  controllers: [CFPController],
+  providers: [CFPService],
+  exports: [],
+})
+export class CFPModule {}

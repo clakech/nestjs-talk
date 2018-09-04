@@ -45,6 +45,7 @@ const images = {
   fwkBack: require("../assets/images/fwk-back.png"),
   go: require("../assets/images/go.gif"),
   happy: require("../assets/images/happy.gif"),
+  modules: require("../assets/images/modules.png"),
   nest: require("../assets/images/nest.png"),
   production: require("../assets/images/production.gif"),
   production2: require("../assets/images/production2.gif"),
@@ -338,7 +339,7 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 1],
-              title: "Import d'Injectable"
+              title: "Import du décorateur Injectable"
             },
             { loc: [4, 5], title: "Création d'une classe CFPService" },
             { loc: [7, 14], title: "Création de méthodes de service" }
@@ -391,6 +392,51 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Modules
           </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("modules")} margin="16px auto" />
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/modules.example")}
+          ranges={[
+            {
+              loc: [0, 2],
+              title: "Import des différents composants"
+            },
+            {
+              loc: [2, 3],
+              title: "Import du décorateur Module"
+            },
+            { loc: [4, 11], title: "Déclaration du CFPModule" }
+          ]}
+        />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Modules ++
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Partagés, globaux, dynamiques
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Réexportation
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Injection de dépendances
+              </ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={["fade"]}>
