@@ -10,7 +10,8 @@ import {
   Slide,
   Text,
   Appear,
-  Image
+  Image,
+  CodePane
 } from "spectacle";
 
 import CodeSlide from "spectacle-code-slide";
@@ -665,11 +666,61 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={["fade"]}>
+          <CodePane
+            textSize="1.4em"
+            source="npm i --save-dev @nestjs/testing"
+          />
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/testing.example")}
+          ranges={[
+            {
+              loc: [0, 1],
+              title: "Import de Test & TestingModule"
+            },
+            { loc: [1, 3], title: "Import de nos composants" },
+            { loc: [4, 8], title: "Mock du CFPService" },
+            {
+              loc: [9, 10],
+              title: "Définition d'une suite de tests pour CFPController"
+            },
+            {
+              loc: [10, 22],
+              title: "Récupération du contrôleur et service avant chaque test"
+            },
+            { loc: [23, 33], title: "Test du create" },
+            { loc: [34, 41], title: "Test du find" }
+          ]}
+        />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Testing ++
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Utilisation avancée de jest (mockImplementation, spyOn...)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Tests End-to-End
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={["zoom"]} bgImage={getImage("happy")} />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Si vous avez encore faim...
+            Pour les curieu(x|ses)...
           </Heading>
           <List textColor="quaternary">
             <Appear>
