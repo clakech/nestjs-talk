@@ -1,0 +1,14 @@
+import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
+import { LoggerMiddleware } from './common/middlewares/logger.middleware';
+import { CFPModule } from './cfp.module';
+
+@Module({
+  imports: [CFPModule],
+})
+export class ApplicationModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(LoggerMiddleware)
+      .forRoutes('call-for-papers');
+  }
+}

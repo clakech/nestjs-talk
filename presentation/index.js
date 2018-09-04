@@ -45,6 +45,7 @@ const images = {
   fwkBack: require("../assets/images/fwk-back.png"),
   go: require("../assets/images/go.gif"),
   happy: require("../assets/images/happy.gif"),
+  middlewares: require("../assets/images/middlewares.png"),
   modules: require("../assets/images/modules.png"),
   nest: require("../assets/images/nest.png"),
   production: require("../assets/images/production.gif"),
@@ -443,6 +444,74 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Middlewares
           </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("middlewares")} margin="16px auto" />
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/middlewares.example1")}
+          ranges={[
+            {
+              loc: [0, 1],
+              title: "Import de décorateurs"
+            },
+            { loc: [2, 4], title: "Injectable implémentant NestMiddleware" },
+            { loc: [4, 10], title: "Fonction resolve" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/middlewares.example2")}
+          ranges={[
+            {
+              loc: [0, 3],
+              title: "Imports"
+            },
+            { loc: [4, 7], title: "Déclaration d'un module" },
+            { loc: [7, 8], title: "Module implémentant NestModule" },
+            { loc: [8, 13], title: "Fonction configure" }
+          ]}
+        />
+
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Middlewares ++
+          </Heading>
+          <List textColor="quaternary">
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                apply(...) renforcé via wildcards, exclude & forRoutes
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Asynchrones
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Injection de dépendances
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Multiples
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Globaux
+              </ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={["fade"]}>
