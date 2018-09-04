@@ -1,0 +1,26 @@
+import {
+  Get,
+  Post,
+  Body,
+  Controller,
+  Param,
+} from '@nestjs/common';
+
+import { CFPService } from './cfp.service';
+import { CallForPaper } from './interfaces/call-for-paper.interface';
+
+@Controller('call-for-papers')
+export class CFPController {
+
+  constructor(private readonly cfpService: CFPService) {}
+
+  @Get()
+  findAll(): Promise<CallForPaper[]> {
+    return this.cfpService.findAll();
+  }
+
+  @Post()
+  async create(@Body() createCFPDto) {
+    this.cfpService.create(createCFPDto);
+  }
+}

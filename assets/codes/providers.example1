@@ -1,0 +1,15 @@
+import { Injectable } from '@nestjs/common';
+import { CallForPaper } from './interfaces/call-for-paper.interface';
+
+@Injectable()
+export class CFPService {
+  private readonly cfps: CallForPaper[] = [];
+
+  findAll(): CallForPaper[] {
+    return this.cfps;
+  }
+
+  create(cfp: CallForPaper) {
+    this.cfps.push(cfp);
+  }
+}

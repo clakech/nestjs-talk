@@ -1,6 +1,6 @@
 import {
   Get,
-  Put,
+  Post,
   Body,
   Controller,
   Param,
@@ -14,8 +14,8 @@ export class CFPController {
     return `This action returns a CFP #${id}`;
   }
 
-  @Put(':id')
-  update(@Param('id') id, @Body() updateCFPDto) {
-    return `This action updates the CFP ${updateCFPDto.url} #${id}`;
+  @Post()
+  create(@Body() createCFPDto) {
+    return `This action creates the CFP (${createCFPDto.url})`;
   }
 }

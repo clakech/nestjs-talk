@@ -48,6 +48,7 @@ const images = {
   nest: require("../assets/images/nest.png"),
   production: require("../assets/images/production.gif"),
   production2: require("../assets/images/production2.gif"),
+  providers: require("../assets/images/providers.png"),
   unopinionated: require("../assets/images/unopinionated.gif")
 };
 
@@ -280,9 +281,9 @@ export default class Presentation extends React.Component {
               title: "Import de décorateurs"
             },
             { loc: [8, 9], title: "Declaration du contrôleur" },
-            { loc: [9, 10], note: "Création d'une classe CFPController" },
+            { loc: [9, 10], title: "Création d'une classe CFPController" },
             { loc: [11, 15], title: "Déclaration d'une route en GET" },
-            { loc: [16, 20], title: "Déclaration d'une route en PUT" }
+            { loc: [16, 20], title: "Déclaration d'une route en POST" }
           ]}
         />
 
@@ -324,6 +325,40 @@ export default class Presentation extends React.Component {
             Providers
           </Heading>
         </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("providers")} margin="16px auto" />
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.example1")}
+          ranges={[
+            {
+              loc: [0, 1],
+              title: "Import de décorateurs"
+            },
+            { loc: [7, 14], title: "Création de méthodes de service" },
+            { loc: [0, 15], title: "That's all !" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.example2")}
+          ranges={[
+            {
+              loc: [14, 15],
+              title: "Injection du CFPService"
+            },
+            { loc: [16, 20], title: "Utilisation du service via GET" },
+            { loc: [21, 25], title: "Utilisation du service via POST" }
+          ]}
+        />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
