@@ -42,6 +42,7 @@ const images = {
   city: require("../assets/images/city.jpg"),
   controllers: require("../assets/images/controllers.png"),
   desert: require("../assets/images/desert.jpg"),
+  exceptionFilters: require("../assets/images/exception-filters.png"),
   fwkBack: require("../assets/images/fwk-back.png"),
   go: require("../assets/images/go.gif"),
   happy: require("../assets/images/happy.gif"),
@@ -518,6 +519,10 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Exception filters
           </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("exceptionFilters")} margin="16px auto" />
         </Slide>
 
         <CodeSlide
