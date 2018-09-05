@@ -53,7 +53,8 @@ npm run deploy
 
 Beaucoup de frameworks et libs côté front-end ont permis aux développeurs d'être plus productifs, tout en construisant des applications plus volumineuses et élégantes, sans que leurs performances ne soient lésées.
 
-Côté back-end, peu de frameworks s'intéressent au problème de l'architecture.
+Côté back-end (node), peu de frameworks s'intéressent au problème de l'architecture (en tout cas, peu démocratisé)
+(check loopback, krakenjs...)
 
 #### L'existant
 
@@ -71,7 +72,7 @@ Le plus populaire est EXPRESS (mais aussi hapi, fastify, koa...). Pb : ils laiss
 
 #### Présentation générale
 
-* Opinionated (cette-fois ci) et tiré du monde d'Angular (pour les adeptes, vous devriez reconnaître un bon nombre de similitude ;))
+* Opinionated (cette-fois ci) et tiré du monde d'Angular + Spring Boot (pour les adeptes, vous devriez reconnaître un bon nombre de similitude ;))
 * Basé sur Express
 * Ecrit en typescript
 * SOLID principles
