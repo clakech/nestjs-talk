@@ -21,6 +21,6 @@ export class CFPController {
 
   @Post()
   async create(@Body() createCFPDto) {
-    this.cfpService.create(createCFPDto);
+    return this.cfpService.create(createCFPDto);
   }
 }

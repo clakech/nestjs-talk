@@ -1,7 +1,7 @@
 {
   "name": "nestjs-talk",
   "version": "1.0.0",
-  "description": "Un zeste de Nest",
+  "description": "NestJS",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",

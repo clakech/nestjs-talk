@@ -71,7 +71,7 @@ export default class Presentation extends React.Component {
       >
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Un zeste de Nest 🚀
+            NestJS 🚀
           </Heading>
           <Text
             textColor="quaternary"
@@ -129,11 +129,11 @@ export default class Presentation extends React.Component {
           bgDarken={0.7}
         >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Dev Front-end
+            Front-end development
           </Heading>
           <Appear>
             <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
-              Productivité
+              Productivity
             </Text>
           </Appear>
           <Appear>
@@ -143,7 +143,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
-              Scalabilité
+              Scalability
             </Text>
           </Appear>
           <Appear>
@@ -159,11 +159,11 @@ export default class Presentation extends React.Component {
           bgDarken={0.8}
         >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Dev Back-end
+            Back-end development
           </Heading>
           <Appear>
             <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
-              Productivité
+              Productivity
             </Text>
           </Appear>
           <Appear>
@@ -173,7 +173,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
-              Scalabilité
+              Scalability
             </Text>
           </Appear>
         </Slide>
@@ -196,7 +196,7 @@ export default class Presentation extends React.Component {
             textColor="secondary"
             margin="0 0 480px 0"
           >
-            L'existant
+            Today, we have...
           </Heading>
         </Slide>
 
@@ -212,16 +212,16 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Problèmes
+            Problems
           </Heading>
           <List textColor="quaternary" margin="40px 0 0 0">
             <Appear>
               <ListItem margin="10px 0 0 0">
-                Arborescence de fichiers non normée
+                Not standardized file tree
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">Difficilement testable</ListItem>
+              <ListItem margin="10px 0 0 0">Difficult to test</ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">All in middlewares</ListItem>
@@ -235,30 +235,30 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Sous le capot...
+            Under the hood...
           </Heading>
           <List textColor="quaternary">
             <Appear>
               <ListItem margin="10px 0 0 0">Opinionated (#angular)</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">Basé sur Express</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin="10px 0 0 0">Ecrit en TypeScript</ListItem>
-            </Appear>
-            <Appear>
               <ListItem margin="10px 0 0 0">
-                Propose une réelle architecture
+                Based on Express (but flexible w/ adapters)
               </ListItem>
             </Appear>
             <Appear>
+              <ListItem margin="10px 0 0 0">Written in TypeScript</ListItem>
+            </Appear>
+            <Appear>
               <ListItem margin="10px 0 0 0">
-                Respecte les principes SOLID
+                Proposes a real architecture
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">Facilite le DDD</ListItem>
+              <ListItem margin="10px 0 0 0">Respects SOLID principles</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">DDD ready</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -283,12 +283,12 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 7],
-              title: "Import de décorateurs"
+              title: "Import of some decorators"
             },
-            { loc: [8, 9], title: "Declaration du contrôleur" },
-            { loc: [9, 10], title: "Création d'une classe CFPController" },
-            { loc: [11, 15], title: "Déclaration d'une route en GET" },
-            { loc: [16, 20], title: "Déclaration d'une route en POST" }
+            { loc: [8, 9], title: "Controller's declaration" },
+            { loc: [9, 10], title: "CFPController class" },
+            { loc: [11, 15], title: "GET route" },
+            { loc: [16, 20], title: "POST route" }
           ]}
         />
 
@@ -314,12 +314,12 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Codes de retours HTTP
+                HTTP status code
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Gestion des erreurs
+                Error handling
               </ListItem>
             </Appear>
           </List>
@@ -343,10 +343,10 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 1],
-              title: "Import du décorateur Injectable"
+              title: "Import of Injectable decorator"
             },
-            { loc: [4, 5], title: "Création d'une classe CFPService" },
-            { loc: [7, 14], title: "Création de méthodes de service" }
+            { loc: [4, 5], title: "CFPService class" },
+            { loc: [7, 14], title: "Some methods of service" }
           ]}
         />
 
@@ -358,14 +358,14 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [12, 13],
-              title: "Retour au CFPController"
+              title: "Back to CFPController"
             },
             {
               loc: [14, 15],
-              title: "Injection du CFPService"
+              title: "CFPService injection"
             },
-            { loc: [16, 20], title: "Utilisation du service via GET" },
-            { loc: [21, 25], title: "Utilisation du service via POST" }
+            { loc: [16, 20], title: "Using the service via a GET call" },
+            { loc: [21, 25], title: "Using the service via a POST call" }
           ]}
         />
 
@@ -376,17 +376,22 @@ export default class Presentation extends React.Component {
           <List textColor="quaternary">
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Personnalisés & asynchrones
+                Custom
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Valeurs calculées dynamiquement
+                Asynchronous
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                @Inject
+                Dynamic
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textSize="1em" margin="10px 0 0 0">
+                Optional
               </ListItem>
             </Appear>
           </List>
@@ -410,13 +415,13 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 2],
-              title: "Import des différents composants"
+              title: "Import of some components"
             },
             {
               loc: [2, 3],
-              title: "Import du décorateur Module"
+              title: "Import Module decorator"
             },
-            { loc: [4, 11], title: "Déclaration du CFPModule" }
+            { loc: [4, 11], title: "CFPModule" }
           ]}
         />
 
@@ -427,17 +432,13 @@ export default class Presentation extends React.Component {
           <List textColor="quaternary">
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Partagés, globaux, dynamiques
+                Shared
               </ListItem>
-            </Appear>
-            <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Réexportation
+                Global
               </ListItem>
-            </Appear>
-            <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Injection de dépendances
+                Dynamic
               </ListItem>
             </Appear>
           </List>
@@ -461,10 +462,10 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 1],
-              title: "Import de décorateurs"
+              title: "Import of some decorators"
             },
-            { loc: [2, 4], title: "Injectable implémentant NestMiddleware" },
-            { loc: [4, 10], title: "Fonction resolve" }
+            { loc: [2, 4], title: "Injectable implementing NestMiddleware" },
+            { loc: [4, 10], title: "Resolve function" }
           ]}
         />
 
@@ -478,9 +479,9 @@ export default class Presentation extends React.Component {
               loc: [0, 3],
               title: "Imports"
             },
-            { loc: [4, 7], title: "Déclaration d'un module" },
-            { loc: [7, 8], title: "Module implémentant NestModule" },
-            { loc: [8, 13], title: "Fonction configure" }
+            { loc: [4, 7], title: "Module declaration" },
+            { loc: [7, 8], title: "Module implementing NestModule" },
+            { loc: [8, 13], title: "Configure function" }
           ]}
         />
 
@@ -491,17 +492,17 @@ export default class Presentation extends React.Component {
           <List textColor="quaternary">
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                apply(...) renforcé via wildcards, exclude & forRoutes
+                apply(...) enhanced via wildcards, exclude & forRoutes
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Asynchrones
+                Asynchronous
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Injection de dépendances
+                Dependency injection
               </ListItem>
             </Appear>
             <Appear>
@@ -511,7 +512,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Globaux
+                Global
               </ListItem>
             </Appear>
           </List>
@@ -535,9 +536,9 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 10],
-              title: "Retour dans notre contrôleur"
+              title: "Back in our controller"
             },
-            { loc: [5, 6], title: "Lancement d'une built-in exception" }
+            { loc: [5, 6], title: "Built-in exception launched" }
           ]}
         />
 
@@ -549,15 +550,15 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 21],
-              title: "Création d'un filtre pour les 404"
+              title: "404 Not Found filter"
             },
-            { loc: [0, 1], title: "Utilisation de @Catch" },
-            { loc: [1, 2], title: "Classe implémentant ExceptionFilter" },
-            { loc: [2, 3], title: "Injection d'un service Logger" },
-            { loc: [4, 20], title: "Fonction catch" },
-            { loc: [5, 9], title: "Récupération de valeurs utiles" },
-            { loc: [10, 11], title: "Warning dans les logs" },
-            { loc: [12, 19], title: "Modification de la réponse" }
+            { loc: [0, 1], title: "Use of @Catch" },
+            { loc: [1, 2], title: "Class implementing ExceptionFilter" },
+            { loc: [2, 3], title: "Logger service injection" },
+            { loc: [4, 20], title: "Catch function" },
+            { loc: [5, 9], title: "Get some values" },
+            { loc: [10, 11], title: "Warning in logs" },
+            { loc: [12, 19], title: "Change the response" }
           ]}
         />
 
@@ -569,9 +570,9 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 11],
-              title: "Retour dans notre contrôleur #oneMoreTime"
+              title: "Back in our controller #oneMoreTime"
             },
-            { loc: [0, 1], title: "Utilisation de @UseFilters" }
+            { loc: [0, 1], title: "Use of @UseFilters" }
           ]}
         />
 
@@ -582,17 +583,17 @@ export default class Presentation extends React.Component {
           <List textColor="quaternary">
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Catch global via @Catch()
+                Catch all exceptions via @Catch()
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                @UseFilters au niveau d'une classe
+                @UseFilters in class
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Utilisation globale via app.useGlobalFilters
+                Global use of filters via app.useGlobalFilters
               </ListItem>
             </Appear>
           </List>
@@ -616,9 +617,9 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 11],
-              title: "Validation d'un CFP avant création"
+              title: "CFP Validation before creation"
             },
-            { loc: [1, 2], title: "Utilisation de ValidationPipe" }
+            { loc: [1, 2], title: "Use of ValidationPipe" }
           ]}
         />
 
@@ -632,8 +633,8 @@ export default class Presentation extends React.Component {
               loc: [0, 11],
               title: "Zoom sur CreateCFPDto"
             },
-            { loc: [1, 4], title: "Utilisation de décorateurs" },
-            { loc: [5, 9], title: "Utilisation de décorateurs" }
+            { loc: [1, 4], title: "Use of decorators" },
+            { loc: [5, 9], title: "Use of decorators" }
           ]}
         />
 
@@ -644,17 +645,17 @@ export default class Presentation extends React.Component {
           <List textColor="quaternary">
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Autre built-in: ParseIntPipe
+                Other built-in: ParseIntPipe
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Personnalisation (implements PipeTransform)
+                Cutostmization (implements PipeTransform)
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
-                Utilisation globale via app.useGlobalPipes()
+                Global use via app.useGlobalPipes()
               </ListItem>
             </Appear>
           </List>
@@ -681,40 +682,22 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 1],
-              title: "Import de Test & TestingModule"
+              title: "Import of Test & TestingModule"
             },
-            { loc: [1, 3], title: "Import de nos composants" },
-            { loc: [4, 8], title: "Mock du CFPService" },
+            { loc: [1, 3], title: "Import of our components" },
+            { loc: [4, 8], title: "CFPService mock" },
             {
               loc: [9, 10],
-              title: "Définition d'une suite de tests pour CFPController"
+              title: "Test suite for CFPController"
             },
             {
               loc: [10, 22],
-              title: "Récupération du contrôleur et service avant chaque test"
+              title: "Get controller and service before each test"
             },
-            { loc: [23, 33], title: "Test du create" },
-            { loc: [34, 41], title: "Test du find" }
+            { loc: [23, 33], title: "Create test" },
+            { loc: [34, 41], title: "Find test" }
           ]}
         />
-
-        <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Testing ++
-          </Heading>
-          <List textColor="quaternary">
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Utilisation avancée de jest (mockImplementation, spyOn...)
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Tests End-to-End
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
 
         <Slide transition={["zoom"]} bgImage={getImage("happy")} />
 
@@ -733,7 +716,12 @@ export default class Presentation extends React.Component {
               <ListItem margin="10px 0 0 0">GraphQL</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">OpenAPI (Swagger)</ListItem>
+              <ListItem margin="10px 0 0 0">
+                OpenAPI (Swagger) => examples
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">CORS</ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">Microservices</ListItem>
@@ -743,6 +731,17 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">Authentication</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">
+                ORM (TypeORM, Sequelize, Mongoose)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">CQRS</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Caching</ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
@@ -758,10 +757,10 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Merci !
+            Thanks !
           </Heading>
           <Text textColor="quaternary" textSize="1.2em" margin="60px 0 0 0">
-            Un zeste de Nest 🚀
+            NestJS 🚀
           </Text>
           <Text
             textColor="quaternary"
