@@ -434,9 +434,13 @@ export default class Presentation extends React.Component {
               <ListItem textSize="1em" margin="10px 0 0 0">
                 Shared
               </ListItem>
+            </Appear>
+            <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
                 Global
               </ListItem>
+            </Appear>
+            <Appear>
               <ListItem textSize="1em" margin="10px 0 0 0">
                 Dynamic
               </ListItem>
