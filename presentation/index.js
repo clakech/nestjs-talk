@@ -11,7 +11,8 @@ import {
   Text,
   Appear,
   Image,
-  CodePane
+  CodePane,
+  S
 } from "spectacle";
 
 import CodeSlide from "spectacle-code-slide";
@@ -45,6 +46,7 @@ const images = {
   desert: require("../assets/images/desert.jpg"),
   exceptionFilters: require("../assets/images/exception-filters.png"),
   fwkBack: require("../assets/images/fwk-back.png"),
+  fwkBack2: require("../assets/images/fwk-back2.png"),
   go: require("../assets/images/go.gif"),
   happy: require("../assets/images/happy.gif"),
   middlewares: require("../assets/images/middlewares.png"),
@@ -54,7 +56,8 @@ const images = {
   production: require("../assets/images/production.gif"),
   production2: require("../assets/images/production2.gif"),
   providers: require("../assets/images/providers.png"),
-  unopinionated: require("../assets/images/unopinionated.gif")
+  unopinionated: require("../assets/images/unopinionated.gif"),
+  industrial: require("../assets/images/industrial.jpg")
 };
 
 function getImage(img) {
@@ -229,6 +232,28 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={["slide"]} bgImage={getImage("fwkBack2")}>
+          <Heading
+            size={1}
+            caps
+            lineHeight={1}
+            textColor="secondary"
+            margin="0 0 480px 0"
+          >
+            ...but also
+          </Heading>
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={getImage("industrial")}
+          bgDarken={0.6}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="white">
+            WAY TOO MUCH POUAH!!!
+          </Heading>
+        </Slide>
+
         <Slide transition={["zoom"]}>
           <Image src={getImage("nest")} margin="16px auto" />
         </Slide>
@@ -247,7 +272,9 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">Written in TypeScript</ListItem>
+              <ListItem margin="10px 0 0 0">
+                <S type="bold">Written in TypeScript</S>
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
@@ -283,7 +310,7 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 7],
-              title: "Import of some decorators"
+              title: "@Decorators FTW"
             },
             { loc: [8, 9], title: "Controller's declaration" },
             { loc: [9, 10], title: "CFPController class" },
