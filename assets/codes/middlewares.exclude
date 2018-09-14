@@ -1,0 +1,14 @@
+@Module({
+  imports: [CFPModule],
+})
+export class ApplicationModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(LoggerMiddleware)
+      .exclude(
+        { path: 'call-for-papers', method: RequestMethod.GET },
+        { path: 'call-for-papers', method: RequestMethod.POST },
+      )
+      .forRoutes(CFPController);
+  }
+}

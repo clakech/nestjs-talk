@@ -306,7 +306,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/controllers.example1")}
+          code={require("raw-loader!../assets/codes/controllers.basics")}
           ranges={[
             {
               loc: [0, 7],
@@ -323,7 +323,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/controllers.example2")}
+          code={require("raw-loader!../assets/codes/controllers.enhanced")}
           ranges={[
             {
               loc: [0, 0],
@@ -574,14 +574,10 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/middlewares.example1")}
+          code={require("raw-loader!../assets/codes/middlewares.logger")}
           ranges={[
-            {
-              loc: [0, 1],
-              title: "Import of some decorators"
-            },
-            { loc: [2, 4], title: "Injectable implementing NestMiddleware" },
-            { loc: [4, 10], title: "Resolve function" }
+            { loc: [0, 2], title: "Injectable implementing NestMiddleware" },
+            { loc: [2, 8], title: "Resolve function" }
           ]}
         />
 
@@ -589,50 +585,64 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/middlewares.example2")}
+          code={require("raw-loader!../assets/codes/middlewares.module")}
           ranges={[
-            {
-              loc: [0, 3],
-              title: "Imports"
-            },
-            { loc: [4, 7], title: "Module declaration" },
-            { loc: [7, 8], title: "Module implementing NestModule" },
-            { loc: [8, 13], title: "Configure function" }
+            { loc: [0, 3], title: "Module declaration" },
+            { loc: [3, 4], title: "Module implementing NestModule" },
+            { loc: [4, 9], title: "Configure function" }
           ]}
         />
 
-        <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Middlewares ++
-          </Heading>
-          <List textColor="quaternary">
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                apply(...) enhanced via wildcards, exclude & forRoutes
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Asynchronous
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Dependency injection
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Multiples
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Global
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/middlewares.multiple")}
+          ranges={[
+            { loc: [0, 0], title: "Middlewares ++" },
+            { loc: [3, 4], title: "Multiple" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/middlewares.wildcards")}
+          ranges={[{ loc: [7, 8], title: "Route wildcards" }]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/middlewares.exclude")}
+          ranges={[{ loc: [7, 11], title: "Exclude" }]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/middlewares.async")}
+          ranges={[
+            { loc: [2, 11], title: "Deferred middleware" },
+            { loc: [3, 4], title: "Some async job" },
+            { loc: [5, 10], title: "Return async function" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/middlewares.global")}
+          ranges={[
+            { loc: [0, 1], title: "Global" },
+            { loc: [1, 2], title: "Global" },
+            { loc: [2, 3], title: "Global" }
+          ]}
+        />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">

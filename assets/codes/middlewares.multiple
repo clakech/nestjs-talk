@@ -1,0 +1,7 @@
+export class ApplicationModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(cors(), helmet(), logger)
+      .forRoutes(CFPController);
+  }
+}
