@@ -23,6 +23,8 @@ $ npm run start:dev
 npm run start:prod
 ```
 
+In development mode, go to [localhost:3001/call-for-papers](http://localhost:3001/call-for-papers)
+
 ## Test
 
 ```bash
@@ -35,4 +37,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
