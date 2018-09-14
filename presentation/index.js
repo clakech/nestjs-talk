@@ -359,7 +359,7 @@ export default class Presentation extends React.Component {
               loc: [0, 1],
               title: "Import of Injectable decorator"
             },
-            { loc: [4, 5], title: "CFPService class" },
+            { loc: [3, 5], title: "CFPService class" },
             { loc: [7, 14], title: "Some methods of service" }
           ]}
         />
