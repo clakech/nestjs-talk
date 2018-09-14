@@ -658,7 +658,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/exception-filters.example1")}
+          code={require("raw-loader!../assets/codes/exception-filters.throw")}
           ranges={[
             {
               loc: [0, 10],
@@ -672,7 +672,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/exception-filters.example2")}
+          code={require("raw-loader!../assets/codes/exception-filters.custom")}
           ranges={[
             {
               loc: [0, 21],
@@ -692,7 +692,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/exception-filters.example3")}
+          code={require("raw-loader!../assets/codes/exception-filters.use-filters")}
           ranges={[
             {
               loc: [0, 11],
@@ -702,28 +702,48 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Exception filters ++
-          </Heading>
-          <List textColor="quaternary">
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Catch all exceptions via @Catch()
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                @UseFilters in class
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Global use of filters via app.useGlobalFilters
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/exception-filters.catch-all")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Exception filters ++"
+            },
+            { loc: [2, 3], title: "Use of @Catch()" },
+            { loc: [4, 18], title: "All Exceptions Filter" }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/exception-filters.use-filters-class")}
+          ranges={[
+            {
+              loc: [0, 1],
+              title: "@UseFilters on class"
+            },
+            {
+              loc: [0, 2],
+              title: "@UseFilters on class"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/exception-filters.global")}
+          ranges={[
+            { loc: [2, 3], title: "Global" },
+            { loc: [0, 6], title: "Global" }
+          ]}
+        />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">

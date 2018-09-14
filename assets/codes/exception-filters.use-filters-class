@@ -1,0 +1,2 @@
+@UseFilters(new HttpExceptionFilter())
+export class CFPController {}
