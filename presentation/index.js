@@ -353,7 +353,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/providers.example1")}
+          code={require("raw-loader!../assets/codes/providers.service")}
           ranges={[
             {
               loc: [0, 1],
@@ -368,7 +368,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/providers.example2")}
+          code={require("raw-loader!../assets/codes/providers.injection")}
           ranges={[
             {
               loc: [12, 13],
