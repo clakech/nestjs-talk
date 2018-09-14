@@ -1,0 +1,26 @@
+@Controller('call-for-papers')
+export class CFPController {
+
+  @Get()
+  findAll(@Req() req, @Res() res): CallForPaper[] {
+    console.log(req.body);
+    res.end("A list of CFP");
+  }
+
+  @Post('/search')
+  search(@Query('conference_name') conferenceName): CallForPaper[] {
+    console.log(conferenceName);
+    return [];
+  }
+
+  @Get('ab*cd')
+  findAllWithWildcards() {
+    return 'This route uses a wildcard';
+  }
+
+  @Post()
+  @HttpCode(204)
+  create(@Body() createCFPDto) {
+    return `This action creates the CFP (${createCFPDto.url})`;
+  }
+}

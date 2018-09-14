@@ -306,7 +306,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/controllers.example")}
+          code={require("raw-loader!../assets/codes/controllers.example1")}
           ranges={[
             {
               loc: [0, 7],
@@ -319,38 +319,25 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Controllers ++
-          </Heading>
-          <List textColor="quaternary">
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                @Request() | @Response() | @Next()
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                (@Body | @Query | @Headers)(param?: string)
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Route wildcards
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                HTTP status code
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Error handling
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/controllers.example2")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Controllers ++"
+            },
+            {
+              loc: [3, 8],
+              title: "@Req & @Res"
+            },
+            { loc: [9, 14], title: "@Query" },
+            { loc: [15, 19], title: "Route wildcards" },
+            { loc: [20, 25], title: "Custom Status code" }
+          ]}
+        />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
