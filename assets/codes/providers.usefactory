@@ -1,0 +1,13 @@
+const connectionFactory = {
+  provide: 'Connection',
+  useFactory: (optionsProvider: OptionsProvider) => {
+    const options = optionsProvider.get();
+    return new DatabaseConnection(options);
+  },
+  inject: [OptionsProvider],
+};
+
+@Module({
+  providers: [connectionFactory],
+})
+export class ApplicationModule {}

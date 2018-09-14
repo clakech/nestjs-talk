@@ -396,33 +396,82 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Providers ++
-          </Heading>
-          <List textColor="quaternary">
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Custom
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Asynchronous
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Dynamic
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Optional
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.usevalue")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Providers ++"
+            },
+            {
+              loc: [2, 6],
+              title: "use value"
+            },
+            {
+              loc: [2, 10],
+              title: "use value"
+            },
+            {
+              loc: [12, 16],
+              title: "use value"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.usevalue.sample")}
+          ranges={[
+            {
+              loc: [2, 7],
+              title: "mock easily"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.useclass")}
+          ranges={[
+            {
+              loc: [0, 6],
+              title: "use class"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.usefactory")}
+          ranges={[
+            {
+              loc: [0, 8],
+              title: "use factory"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.optional")}
+          ranges={[
+            {
+              loc: [5, 6],
+              title: "optional"
+            }
+          ]}
+        />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">

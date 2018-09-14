@@ -1,0 +1,16 @@
+import { connection } from "./connection";
+
+const connectionProvider = {
+  provide: "Connection",
+  useValue: connection
+};
+
+@Module({
+  providers: [connectionProvider]
+})
+export class ApplicationModule {}
+
+@Injectable()
+class CatsRepository {
+  constructor(@Inject("Connection") connection: Connection) {}
+}
