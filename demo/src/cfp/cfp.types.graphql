@@ -1,0 +1,18 @@
+type CallForPaper {
+  id: String
+  endDate: String
+  url: String
+  conference: Conference
+}
+
+type Conference {
+  name: String
+  location: String
+  startDate: String
+  endDate: String
+  url: String
+}
+
+type Query {
+  callForPapers: [CallForPaper]
+}
