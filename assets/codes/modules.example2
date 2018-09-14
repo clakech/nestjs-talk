@@ -1,0 +1,7 @@
+import { Module } from '@nestjs/common';
+import { CFPModule } from './cfp.module';
+
+@Module({
+  imports: [CFPModule],
+})
+export class ApplicationModule {}

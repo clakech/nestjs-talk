@@ -476,40 +476,89 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/modules.example")}
           ranges={[
-            {
-              loc: [0, 2],
-              title: "Import of some components"
-            },
-            {
-              loc: [2, 3],
-              title: "Import Module decorator"
-            },
-            { loc: [4, 11], title: "CFPModule" }
+            { loc: [4, 11], title: "CFPModule", note: "Hello feature module !" }
           ]}
         />
 
-        <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Modules ++
-          </Heading>
-          <List textColor="quaternary">
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Shared
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Global
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Dynamic
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/modules.example2")}
+          ranges={[{ loc: [3, 7], title: "ApplicationModule" }]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/modules.shared")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Shared modules"
+            },
+            {
+              loc: [0, 11],
+              title: "Remember CFPModule ?"
+            },
+            {
+              loc: [8, 9],
+              title: "use exports"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/modules.export")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Export a whole module ?"
+            },
+            {
+              loc: [0, 6],
+              title: "use exports"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/modules.global")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Need global module ?"
+            },
+            {
+              loc: [4, 11],
+              title: "use @Global()"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/modules.dynamic")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Need more flexibility ?"
+            },
+            {
+              loc: [7, 17],
+              title: "use DynamicModule"
+            }
+          ]}
+        />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">

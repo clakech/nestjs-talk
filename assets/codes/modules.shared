@@ -1,11 +1,11 @@
-import { Module } from '@nestjs/common';
 import { CFPController } from './cfp.controller';
 import { CFPService } from './cfp.service';
+import { Module } from '@nestjs/common';
 
 @Module({
   imports: [],
   controllers: [CFPController],
   providers: [CFPService],
-  exports: [],
+  exports: [CFPService],
 })
 export class CFPModule {}

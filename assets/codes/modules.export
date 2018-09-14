@@ -1,0 +1,5 @@
+@Module({
+  imports: [CommonModule],
+  exports: [CommonModule],
+})
+export class CoreModule {}
