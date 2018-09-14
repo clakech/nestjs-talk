@@ -474,7 +474,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/modules.example")}
+          code={require("raw-loader!../assets/codes/modules.feature")}
           ranges={[
             { loc: [4, 11], title: "CFPModule", note: "Hello feature module !" }
           ]}
@@ -484,7 +484,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/modules.example2")}
+          code={require("raw-loader!../assets/codes/modules.application")}
           ranges={[{ loc: [3, 7], title: "ApplicationModule" }]}
         />
 
