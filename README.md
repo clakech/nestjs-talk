@@ -31,7 +31,7 @@ npm start
 
 Open a browser and hit [http://localhost:3000](http://localhost:3000), and we are ready to roll.
 
-## Build & Deployment
+## Build
 
 Building the dist version of the project is as easy as running
 
