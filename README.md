@@ -39,9 +39,10 @@ Building the dist version of the project is as easy as running
 npm run build
 ```
 
-## Synopsis
 
-Titre: Un zeste de Nest pour réhausser le goût du back-end JS
+## Titre: Un zeste de Nest pour réhausser le goût du back-end JS
+
+## Synopsis
 
 Nous connaissons tous un développeur frontend qui est devenu plus efficace grâce à des solutions comme Angular, Vue ou React.
 On connait également des développeurs backend qui développent de manière architecturée grâce à Spring Boot pour Java ou ASP.NET Core pour .NET Core.
