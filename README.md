@@ -39,12 +39,6 @@ Building the dist version of the project is as easy as running
 npm run build
 ```
 
-If you want to deploy the slideshow to surge, run
-
-```bash
-npm run deploy
-```
-
 ## Synopsis
 
 Titre: Un zeste de Nest pour réhausser le goût du back-end JS
