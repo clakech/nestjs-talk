@@ -45,6 +45,15 @@ If you want to deploy the slideshow to surge, run
 npm run deploy
 ```
 
+## Synopsis
+
+Titre: Un zeste de Nest pour réhausser le goût du back-end JS
+
+Les développeurs web front sont équipés d'outils pour augmenter leur efficacité comme Angular, Vue ou React.
+Les développeurs backend ont également le besoin de s'équiper pour les besoins les plus récurrents et il existe des solutions dans la plupart des langages comme Spring Boot pour Java, ASP.NET Core pour .NET Core... et pour NodeJS, 99% utilise Express qui est loin d'être un équivalent.
+Pourtant il y a plein d'intérets à proposer des faciliants qui permettraient en plus d'utiliser côté client comme serveur le même language de programmation, un environnement d'execution proche, de partager du code commun, d'ajouter un contrôle statique du code à la compilation avec TypeScript... Et si NestJS était notre guide vers ce graal sans dénaturer le goût de liberté qu'on aime tant ?
+Venez découvrir cet ingrédient pour vous aider à faire mijoter vos projets !
+
 ## Notes
 
 ### Introduction
