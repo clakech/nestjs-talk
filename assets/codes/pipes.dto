@@ -7,4 +7,7 @@ export class CreateCFP {
   @IsNotEmpty()
   @MinLength(5)
   url: string;
+
+  @IsURL()
+  url2: string;
 }

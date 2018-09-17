@@ -573,7 +573,11 @@ export default class Presentation extends React.Component {
             },
             {
               loc: [7, 17],
-              title: "use DynamicModule"
+              title: "use DynamicModule 🤯"
+            },
+            {
+              loc: [18, 24],
+              title: "import dynamically !"
             }
           ]}
         />
@@ -658,9 +662,7 @@ export default class Presentation extends React.Component {
           lang="jsx"
           textSize=".6em"
           code={require("raw-loader!../assets/codes/middlewares.global")}
-          ranges={[
-            { loc: [0, 3], title: "Global" }
-          ]}
+          ranges={[{ loc: [0, 3], title: "Global" }]}
         />
 
         <Slide transition={["fade"]}>
@@ -799,7 +801,12 @@ export default class Presentation extends React.Component {
               title: "Zoom sur CreateCFP"
             },
             { loc: [1, 4], title: "Use of decorators" },
-            { loc: [5, 9], title: "Use of decorators" }
+            { loc: [5, 9], title: "Use of decorators" },
+            {
+              loc: [10, 12],
+              title: "Use of decorators",
+              note: "see https://github.com/typestack/class-validator"
+            }
           ]}
         />
 
@@ -871,7 +878,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Pour les curieu(x|ses)...
           </Heading>
-          <List textColor="quaternary">
+          <List ordered textColor="quaternary">
             <Appear>
               <ListItem margin="10px 0 0 0">Interceptors</ListItem>
             </Appear>
@@ -926,7 +933,7 @@ export default class Presentation extends React.Component {
             Thanks !
           </Heading>
           <Text textColor="quaternary" textSize="1.2em" margin="60px 0 0 0">
-            NestJS 🚀
+            NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
           <Text
             textColor="quaternary"
