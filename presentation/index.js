@@ -886,7 +886,7 @@ export default class Presentation extends React.Component {
               <ListItem margin="10px 0 0 0">Guards</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">GraphQL</ListItem>
+              <ListItem margin="10px 0 0 0">GraphQL ❤</ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
