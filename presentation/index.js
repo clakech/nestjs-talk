@@ -223,15 +223,15 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="quaternary" margin="40px 0 0 0">
             <Appear>
+              <ListItem margin="10px 0 0 0">Sotware architecture-less</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem margin="10px 0 0 0">Testabilty is tricky</ListItem>
+            </Appear>
+            <Appear>
               <ListItem margin="10px 0 0 0">
-                Not standardized file tree
+                Middlewares all the things !
               </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin="10px 0 0 0">Difficult to test</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin="10px 0 0 0">All in middlewares</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -268,21 +268,18 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="quaternary">
             <Appear>
-              <ListItem margin="10px 0 0 0">Opinionated (#angular)</ListItem>
+              <ListItem margin="10px 0 0 0">
+                Opinionated, the Angular way
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
-                Based on Express (but flexible w/ adapters)
+                Based on Express, adapted for Fastify 🚀
               </ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
                 <S type="bold">Written in TypeScript</S>
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin="10px 0 0 0">
-                Proposes a real architecture
               </ListItem>
             </Appear>
             <Appear>
@@ -298,8 +295,13 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Controllers
+            REST API
           </Heading>
+          <Appear>
+            <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+              Controllers
+            </Heading>
+          </Appear>
         </Slide>
 
         <Slide transition={["slide"]}>
@@ -316,10 +318,21 @@ export default class Presentation extends React.Component {
               loc: [0, 7],
               title: "@Decorators FTW"
             },
-            { loc: [8, 9], title: "Controller's declaration" },
-            { loc: [9, 10], title: "CFPController class" },
-            { loc: [11, 15], title: "GET route" },
-            { loc: [16, 20], title: "POST route" }
+            {
+              loc: [8, 10],
+              title: "Controller's class declaration",
+              note: "https://app/call-for-papers/*"
+            },
+            {
+              loc: [11, 15],
+              title: "HTTP GET route",
+              note: "GET https://app/call-for-papers/{id}"
+            },
+            {
+              loc: [16, 20],
+              title: "HTTP POST route with a @Body",
+              note: "Request's body is extracted in createDFP"
+            }
           ]}
         />
 
@@ -335,9 +348,14 @@ export default class Presentation extends React.Component {
             },
             {
               loc: [3, 8],
-              title: "@Req & @Res"
+              title: "Express flavors @Req & @Res"
             },
-            { loc: [9, 14], title: "@Query" },
+            {
+              loc: [9, 14],
+              title: "@Query",
+              note:
+                "POST https://app/call-for-papers/search?conference_name=DevoxxFrance"
+            },
             { loc: [15, 19], title: "Route wildcards" },
             { loc: [20, 25], title: "Custom Status code" }
           ]}
@@ -359,11 +377,7 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/providers.service")}
           ranges={[
-            {
-              loc: [0, 1],
-              title: "Import of Injectable decorator"
-            },
-            { loc: [3, 5], title: "CFPService class" },
+            { loc: [3, 5], title: "CFPService class declaration" },
             { loc: [7, 14], title: "Some methods of service" }
           ]}
         />
@@ -613,7 +627,10 @@ export default class Presentation extends React.Component {
           lang="jsx"
           textSize=".6em"
           code={require("raw-loader!../assets/codes/middlewares.wildcards")}
-          ranges={[{ loc: [7, 8], title: "Route wildcards" }]}
+          ranges={[
+            { loc: [6, 8], title: "Apply middleware" },
+            { loc: [8, 10], title: "Route wildcards" }
+          ]}
         />
 
         <CodeSlide
@@ -642,9 +659,7 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/middlewares.global")}
           ranges={[
-            { loc: [0, 1], title: "Global" },
-            { loc: [1, 2], title: "Global" },
-            { loc: [2, 3], title: "Global" }
+            { loc: [0, 3], title: "Global" }
           ]}
         />
 
@@ -781,7 +796,7 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 11],
-              title: "Zoom sur CreateCFPDto"
+              title: "Zoom sur CreateCFP"
             },
             { loc: [1, 4], title: "Use of decorators" },
             { loc: [5, 9], title: "Use of decorators" }
@@ -824,13 +839,6 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Testing
           </Heading>
-        </Slide>
-
-        <Slide transition={["fade"]}>
-          <CodePane
-            textSize="1.4em"
-            source="npm i --save-dev @nestjs/testing"
-          />
         </Slide>
 
         <CodeSlide

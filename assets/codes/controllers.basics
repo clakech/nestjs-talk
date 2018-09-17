@@ -15,7 +15,7 @@ export class CFPController {
   }
 
   @Post()
-  create(@Body() createCFPDto) {
-    return `This action creates the CFP (${createCFPDto.url})`;
+  create(@Body() createCFP) {
+    return `This action creates the CFP (${createCFP.url})`;
   }
 }

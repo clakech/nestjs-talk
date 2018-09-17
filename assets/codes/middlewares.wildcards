@@ -4,6 +4,8 @@
 export class ApplicationModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
+      .apply(FunnyMiddleware)
+      .forRoutes('youpi')
       .apply(LoggerMiddleware)
       .forRoutes({ path: '*', method: RequestMethod.ALL });
   }

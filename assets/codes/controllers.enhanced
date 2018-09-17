@@ -20,7 +20,7 @@ export class CFPController {
 
   @Post()
   @HttpCode(204)
-  create(@Body() createCFPDto) {
-    return `This action creates the CFP (${createCFPDto.url})`;
+  create(@Body() createCFP) {
+    return `This action creates the CFP (${createCFP.url})`;
   }
 }
