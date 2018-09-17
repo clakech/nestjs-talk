@@ -71,6 +71,7 @@ export default class Presentation extends React.Component {
         transition={["zoom", "slide"]}
         transitionDuration={500}
         theme={theme}
+        progress="bar"
       >
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -113,16 +114,16 @@ export default class Presentation extends React.Component {
             Laurent Thiebault
           </Heading>
           <Text textColor="quaternary" textSize="1em" margin="30px 0 0 0">
-            TODO
+            💼 Software Engineer
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
-            TODO
+            🏢 AXA France
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
-            TODO
+            ♥️ open source, music & beer
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
-            TODO
+            🐦 lauthieb
           </Text>
         </Slide>
 
