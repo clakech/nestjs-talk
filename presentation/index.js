@@ -95,16 +95,19 @@ export default class Presentation extends React.Component {
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Cyril Lakech
           </Heading>
-          <Text textColor="quaternary" textSize="1em" margin="30px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="30px 0 0 0">
             💼 Tech Leader
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
             🏢 AXA France
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
-            ♥️ developer community, hacking status quo
+          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
+            ♥️ developer community
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
+            🐱‍💻 hacking status quo
+          </Text>
+          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
             🐦 @cyril_lakech
           </Text>
         </Slide>
@@ -113,16 +116,16 @@ export default class Presentation extends React.Component {
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Laurent Thiebault
           </Heading>
-          <Text textColor="quaternary" textSize="1em" margin="30px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="30px 0 0 0">
             💼 Software Engineer
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
             🏢 AXA France
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
-            ♥️ open source, music & beer
+          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
+            ♥️ open source, music & 🍺
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="10px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
             🐦 @lauthieb
           </Text>
         </Slide>
