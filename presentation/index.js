@@ -759,7 +759,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/pipes.example1")}
+          code={require("raw-loader!../assets/codes/pipes.use-pipes")}
           ranges={[
             {
               loc: [0, 11],
@@ -773,7 +773,7 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/pipes.example2")}
+          code={require("raw-loader!../assets/codes/pipes.dto")}
           ranges={[
             {
               loc: [0, 11],
@@ -784,28 +784,37 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Pipes ++
-          </Heading>
-          <List textColor="quaternary">
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Other built-in: ParseIntPipe
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Cutostmization (implements PipeTransform)
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textSize="1em" margin="10px 0 0 0">
-                Global use via app.useGlobalPipes()
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/pipes.parse-int")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Pipes ++"
+            },
+            {
+              loc: [2, 4],
+              title: "ParseIntPipe"
+            },
+            {
+              loc: [4, 11],
+              title: "ParseIntPipe"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/pipes.global")}
+          ranges={[
+            { loc: [2, 3], title: "Global" },
+            { loc: [0, 6], title: "Global" }
+          ]}
+        />
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
