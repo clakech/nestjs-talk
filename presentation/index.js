@@ -849,8 +849,7 @@ export default class Presentation extends React.Component {
               loc: [10, 22],
               title: "Get controller and service before each test"
             },
-            { loc: [23, 33], title: "Create test" },
-            { loc: [34, 41], title: "Find test" }
+            { loc: [23, 33], title: "Create test" }
           ]}
         />
 

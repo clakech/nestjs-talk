@@ -31,12 +31,4 @@ describe('CFPController', () => {
       expect(res.id).toEqual('abc');
     });
   });
-
-  describe('findOne', () => {
-    it('should call findOne in CFPService', () => {
-      cfpController.findOne('abc');
-
-      expect(cfpServiceMock.findOne).toHaveBeenCalledWith('abc');
-    });
-  });
 });
