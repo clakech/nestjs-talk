@@ -77,18 +77,13 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             NestJS 🚀
           </Heading>
-          <Text
-            textColor="quaternary"
-            textSize="0.9em"
-            margin="60px 0 0 0"
-            bold
-          >
+          <Text textColor="quaternary" textSize="2em" margin="60px 0 0 0" bold>
             Meilleur Dev de France 2018
           </Text>
-          <Text textColor="quaternary" textSize="0.7em" margin="24px 0 0 0">
+          <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
             @cyril_lakech & @lauthieb
           </Text>
-          <Image src={getImage("axa")} width="60" margin="16px auto" />
+          <Image src={getImage("axa")} width="100" margin="16px auto" />
         </Slide>
 
         <Slide transition={["fade"]} bgImage={getImage("city")} bgDarken={0.7}>
@@ -139,22 +134,22 @@ export default class Presentation extends React.Component {
             Front-end development
           </Heading>
           <Appear>
-            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Productivity
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Performance
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Scalability
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Architecture
             </Text>
           </Appear>
@@ -169,17 +164,17 @@ export default class Presentation extends React.Component {
             Back-end development
           </Heading>
           <Appear>
-            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Productivity
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Performance
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Scalability
             </Text>
           </Appear>
@@ -343,10 +338,6 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/controllers.enhanced")}
           ranges={[
             {
-              loc: [0, 0],
-              title: "Controllers ++"
-            },
-            {
               loc: [3, 8],
               title: "Express flavors @Req & @Res"
             },
@@ -396,72 +387,7 @@ export default class Presentation extends React.Component {
               loc: [14, 15],
               title: "CFPService injection"
             },
-            { loc: [16, 20], title: "Using the service via a GET call" },
-            { loc: [21, 25], title: "Using the service via a POST call" }
-          ]}
-        />
-
-        <CodeSlide
-          transition={["fade"]}
-          lang="js"
-          textSize=".6em"
-          code={require("raw-loader!../assets/codes/providers.usevalue")}
-          ranges={[
-            {
-              loc: [0, 0],
-              title: "Providers ++"
-            },
-            {
-              loc: [2, 6],
-              title: "use value"
-            },
-            {
-              loc: [2, 10],
-              title: "use value"
-            },
-            {
-              loc: [12, 16],
-              title: "use value"
-            }
-          ]}
-        />
-
-        <CodeSlide
-          transition={["fade"]}
-          lang="js"
-          textSize=".6em"
-          code={require("raw-loader!../assets/codes/providers.usevalue.sample")}
-          ranges={[
-            {
-              loc: [2, 7],
-              title: "mock easily"
-            }
-          ]}
-        />
-
-        <CodeSlide
-          transition={["fade"]}
-          lang="js"
-          textSize=".6em"
-          code={require("raw-loader!../assets/codes/providers.useclass")}
-          ranges={[
-            {
-              loc: [0, 6],
-              title: "use class"
-            }
-          ]}
-        />
-
-        <CodeSlide
-          transition={["fade"]}
-          lang="js"
-          textSize=".6em"
-          code={require("raw-loader!../assets/codes/providers.usefactory")}
-          ranges={[
-            {
-              loc: [0, 8],
-              title: "use factory"
-            }
+            { loc: [16, 20], title: "Using the service via a GET call" }
           ]}
         />
 
@@ -473,7 +399,7 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [5, 6],
-              title: "optional"
+              title: "Optional"
             }
           ]}
         />
@@ -517,12 +443,12 @@ export default class Presentation extends React.Component {
               title: "Shared modules"
             },
             {
-              loc: [0, 11],
+              loc: [4, 11],
               title: "Remember CFPModule ?"
             },
             {
               loc: [8, 9],
-              title: "use exports"
+              title: "Use exports"
             }
           ]}
         />
@@ -535,11 +461,11 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 0],
-              title: "Export a whole module ?"
+              title: "Re-Export a whole module ?"
             },
             {
               loc: [0, 6],
-              title: "use exports"
+              title: "Use exports"
             }
           ]}
         />
@@ -556,7 +482,7 @@ export default class Presentation extends React.Component {
             },
             {
               loc: [4, 11],
-              title: "use @Global()"
+              title: "Use @Global()"
             }
           ]}
         />
@@ -573,11 +499,62 @@ export default class Presentation extends React.Component {
             },
             {
               loc: [7, 17],
-              title: "use DynamicModule 🤯"
+              title: "Use DynamicModule 🤯"
             },
             {
               loc: [18, 24],
-              title: "import dynamically !"
+              title: "Import dynamically !"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.usevalue")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Custom Providers"
+            },
+            {
+              loc: [2, 6],
+              title: "Use value"
+            },
+            {
+              loc: [2, 10],
+              title: "Use value"
+            },
+            {
+              loc: [12, 16],
+              title: "Use value"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.useclass")}
+          ranges={[
+            {
+              loc: [0, 6],
+              title: "Use class"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="js"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/providers.usefactory")}
+          ranges={[
+            {
+              loc: [0, 8],
+              title: "Use factory"
             }
           ]}
         />
@@ -611,7 +588,8 @@ export default class Presentation extends React.Component {
           ranges={[
             { loc: [0, 3], title: "Module declaration" },
             { loc: [3, 4], title: "Module implementing NestModule" },
-            { loc: [4, 9], title: "Configure function" }
+            { loc: [4, 8], title: "Configure function" },
+            { loc: [8, 13], title: "Or just use a function" }
           ]}
         />
 
@@ -620,10 +598,7 @@ export default class Presentation extends React.Component {
           lang="jsx"
           textSize=".6em"
           code={require("raw-loader!../assets/codes/middlewares.multiple")}
-          ranges={[
-            { loc: [0, 0], title: "Middlewares ++" },
-            { loc: [3, 4], title: "Multiple" }
-          ]}
+          ranges={[{ loc: [3, 4], title: "Multiple Middlewares" }]}
         />
 
         <CodeSlide
@@ -699,7 +674,7 @@ export default class Presentation extends React.Component {
               loc: [0, 21],
               title: "404 Not Found filter"
             },
-            { loc: [0, 1], title: "Use of @Catch" },
+            { loc: [0, 1], title: "Use @Catch" },
             { loc: [1, 2], title: "Class implementing ExceptionFilter" },
             { loc: [2, 3], title: "Logger service injection" },
             { loc: [4, 20], title: "Catch function" },
@@ -719,7 +694,7 @@ export default class Presentation extends React.Component {
               loc: [0, 11],
               title: "Back in our controller #oneMoreTime"
             },
-            { loc: [0, 1], title: "Use of @UseFilters" }
+            { loc: [0, 1], title: "Use @UseFilters" }
           ]}
         />
 
@@ -731,9 +706,9 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 0],
-              title: "Exception filters ++"
+              title: "Catch all Exception filters"
             },
-            { loc: [2, 3], title: "Use of @Catch()" },
+            { loc: [2, 3], title: "Use @Catch()" },
             { loc: [4, 18], title: "All Exceptions Filter" }
           ]}
         />
@@ -744,10 +719,6 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/exception-filters.use-filters-class")}
           ranges={[
-            {
-              loc: [0, 1],
-              title: "@UseFilters on class"
-            },
             {
               loc: [0, 2],
               title: "@UseFilters on class"
@@ -761,8 +732,8 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/exception-filters.global")}
           ranges={[
-            { loc: [2, 3], title: "Global" },
-            { loc: [0, 6], title: "Global" }
+            { loc: [2, 3], title: "Global Exceptions Filter" },
+            { loc: [0, 6], title: "Global Exceptions Filter" }
           ]}
         />
 
@@ -786,7 +757,7 @@ export default class Presentation extends React.Component {
               loc: [0, 11],
               title: "CFP Validation before creation"
             },
-            { loc: [1, 2], title: "Use of ValidationPipe" }
+            { loc: [1, 2], title: "Use ValidationPipe" }
           ]}
         />
 
@@ -797,14 +768,14 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/pipes.dto")}
           ranges={[
             {
-              loc: [0, 11],
+              loc: [0, 13],
               title: "Zoom sur CreateCFP"
             },
-            { loc: [1, 4], title: "Use of decorators" },
-            { loc: [5, 9], title: "Use of decorators" },
+            { loc: [1, 4], title: "Use decorators" },
+            { loc: [5, 9], title: "Use decorators" },
             {
               loc: [10, 12],
-              title: "Use of decorators",
+              title: "Use  decorators",
               note: "see https://github.com/typestack/class-validator"
             }
           ]}
@@ -817,16 +788,12 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/pipes.parse-int")}
           ranges={[
             {
-              loc: [0, 0],
-              title: "Pipes ++"
-            },
-            {
               loc: [2, 4],
-              title: "ParseIntPipe"
+              title: "Custom Pipe"
             },
             {
               loc: [4, 11],
-              title: "ParseIntPipe"
+              title: "with transform function"
             }
           ]}
         />
@@ -837,8 +804,8 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/pipes.global")}
           ranges={[
-            { loc: [2, 3], title: "Global" },
-            { loc: [0, 6], title: "Global" }
+            { loc: [2, 3], title: "Global Pipe" },
+            { loc: [0, 6], title: "Global Pipe" }
           ]}
         />
 
@@ -854,21 +821,16 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/testing.example")}
           ranges={[
-            {
-              loc: [0, 1],
-              title: "Import of Test & TestingModule"
-            },
-            { loc: [1, 3], title: "Import of our components" },
             { loc: [4, 8], title: "CFPService mock" },
             {
               loc: [9, 10],
               title: "Test suite for CFPController"
             },
             {
-              loc: [10, 22],
-              title: "Get controller and service before each test"
+              loc: [10, 20],
+              title: "Init module & get controller before each test"
             },
-            { loc: [23, 33], title: "Create test" }
+            { loc: [22, 30], title: "Create test" }
           ]}
         />
 
@@ -932,21 +894,21 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Thanks !
           </Heading>
-          <Text textColor="quaternary" textSize="1.2em" margin="60px 0 0 0">
+          <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
           <Text
             textColor="quaternary"
-            textSize="0.9em"
+            textSize="2em"
             margin="20px 0 0 0"
             bold
           >
             Meilleur Dev de France 2018
           </Text>
-          <Text textColor="quaternary" textSize="0.7em" margin="24px 0 0 0">
+          <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
             @cyril_lakech & @lauthieb
           </Text>
-          <Image src={getImage("axa")} width="60" margin="16px auto" />
+          <Image src={getImage("axa")} width="100" margin="16px auto" />
         </Slide>
       </Deck>
     );

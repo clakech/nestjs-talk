@@ -5,6 +5,11 @@ export class ApplicationModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
       .apply(LoggerMiddleware)
-      .forRoutes('call-for-papers');
+      .forRoutes('call-for-papers')
+      .apply((req, res, next) => {
+        console.blink(`Request...`);
+        next();
+      })
+      .forRoutes('*');
   }
 }

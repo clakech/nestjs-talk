@@ -13,7 +13,7 @@ export class CFPController {
     return [];
   }
 
-  @Get('ab*cd')
+  @Get('foo*bar')
   findAllWithWildcards() {
     return 'This route uses a wildcard';
   }

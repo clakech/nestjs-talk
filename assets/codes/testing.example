@@ -9,7 +9,6 @@ const cfpServiceMock = jest.fn<CFPService>(() => ({
 
 describe('CFPController', () => {
   let cfpController: CFPController;
-  let cfpService: CFPService;
 
   beforeEach(async () => {
     const module = await Test.createTestingModule({
@@ -17,7 +16,6 @@ describe('CFPController', () => {
         providers: [CFPService],
       }).compile();
 
-    cfpService = module.get<CFPService>(CFPService);
     cfpController = module.get<CFPController>(CFPController);
   });
 
