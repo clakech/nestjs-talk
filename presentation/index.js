@@ -11,7 +11,6 @@ import {
   Text,
   Appear,
   Image,
-  CodePane,
   S
 } from "spectacle";
 
@@ -841,6 +840,26 @@ export default class Presentation extends React.Component {
           ]}
         />
 
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            API Doc
+          </Heading>
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/openapi")}
+          ranges={[
+            {
+              loc: [5, 17],
+              title: "OpenAPI auto-generated",
+              note: "go to http://localhost:3000/api"
+            }
+          ]}
+        />
+
         <Slide transition={["zoom"]} bgImage={getImage("happy")} />
 
         <Slide transition={["fade"]}>
@@ -858,32 +877,29 @@ export default class Presentation extends React.Component {
               <ListItem margin="10px 0 0 0">GraphQL ❤</ListItem>
             </Appear>
             <Appear order={4}>
-              <ListItem margin="10px 0 0 0">OpenAPI (Swagger)</ListItem>
-            </Appear>
-            <Appear order={5}>
               <ListItem margin="10px 0 0 0">CORS</ListItem>
             </Appear>
-            <Appear order={6}>
+            <Appear order={5}>
               <ListItem margin="10px 0 0 0">Microservices</ListItem>
             </Appear>
-            <Appear order={7}>
+            <Appear order={6}>
               <ListItem margin="10px 0 0 0">Websockets</ListItem>
             </Appear>
-            <Appear order={8}>
+            <Appear order={7}>
               <ListItem margin="10px 0 0 0">Authentication</ListItem>
             </Appear>
-            <Appear order={9}>
+            <Appear order={8}>
               <ListItem margin="10px 0 0 0">
                 ORM (TypeORM, Sequelize, Mongoose)
               </ListItem>
             </Appear>
-            <Appear order={10}>
+            <Appear order={9}>
               <ListItem margin="10px 0 0 0">CQRS</ListItem>
             </Appear>
-            <Appear order={11}>
+            <Appear order={10}>
               <ListItem margin="10px 0 0 0">Caching</ListItem>
             </Appear>
-            <Appear order={12}>
+            <Appear order={11}>
               <ListItem margin="10px 0 0 0">
                 Execution context (CLI, scripting...)
               </ListItem>
