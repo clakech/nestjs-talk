@@ -4,7 +4,7 @@
 export class ApplicationModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
-      .apply(FunnyMiddleware)
+      .apply(cors(), helmet(), logger)
       .forRoutes('youpi')
       .apply(LoggerMiddleware)
       .forRoutes({ path: '*', method: RequestMethod.ALL });

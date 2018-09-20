@@ -613,8 +613,7 @@ export default class Presentation extends React.Component {
           textSize=".6em"
           code={require("raw-loader!../assets/codes/middlewares.module")}
           ranges={[
-            { loc: [0, 3], title: "Module declaration" },
-            { loc: [3, 4], title: "Module implementing NestModule" },
+            { loc: [0, 4], title: "Module implementing NestModule" },
             { loc: [4, 8], title: "Configure function" },
             { loc: [8, 13], title: "Or just use a function" }
           ]}
@@ -624,17 +623,10 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
-          code={require("raw-loader!../assets/codes/middlewares.multiple")}
-          ranges={[{ loc: [3, 4], title: "Multiple Middlewares" }]}
-        />
-
-        <CodeSlide
-          transition={["fade"]}
-          lang="jsx"
-          textSize=".6em"
           code={require("raw-loader!../assets/codes/middlewares.wildcards")}
           ranges={[
-            { loc: [6, 8], title: "Apply middleware" },
+            { loc: [6, 7], title: "Multiple Middlewares" },
+            { loc: [7, 8], title: "Apply middleware" },
             { loc: [8, 10], title: "Route wildcards" }
           ]}
         />
@@ -736,7 +728,7 @@ export default class Presentation extends React.Component {
               title: "Catch all Exception filters"
             },
             { loc: [2, 3], title: "Use @Catch()" },
-            { loc: [4, 18], title: "All Exceptions Filter" }
+            { loc: [2, 18], title: "All Exceptions Filter" }
           ]}
         />
 
@@ -885,7 +877,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Pour les curieu(x|ses)...
+            Want more ?
           </Heading>
           <List textColor="quaternary">
             <Appear order={1}>
