@@ -275,7 +275,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
-                Based on Express, adapted for Fastify 🚀
+                Express based & Fastify compatible 🚀
               </ListItem>
             </Appear>
             <Appear>
@@ -308,6 +308,27 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]}>
           <Image src={getImage("controllers")} margin="16px auto" />
         </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/controllers.express")}
+          ranges={[
+            {
+              loc: [0, 0],
+              title: "Express Only"
+            },
+            {
+              loc: [0, 4],
+              title: "Route declaration"
+            },
+            {
+              loc: [5, 13],
+              title: "Sample Implementation"
+            }
+          ]}
+        />
 
         <CodeSlide
           transition={["fade"]}

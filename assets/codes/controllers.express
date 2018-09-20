@@ -1,0 +1,13 @@
+ctrl app = express.Router();
+
+app.get('/call-for-papers/:id', cfpController.getById);
+app.post('/call-for-papers', cfpController.create);
+
+// cfp-controller.js
+export class CFPController {  
+  async getById(req, res) {
+    const cfp = await CFPService.findById(req.params.id);
+    return res.json(cfp); 
+  }
+  ...
+}
