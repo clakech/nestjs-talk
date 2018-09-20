@@ -848,44 +848,42 @@ export default class Presentation extends React.Component {
             Pour les curieu(x|ses)...
           </Heading>
           <List ordered textColor="quaternary">
-            <Appear>
+            <Appear order={1}>
               <ListItem margin="10px 0 0 0">Interceptors</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={2}>
               <ListItem margin="10px 0 0 0">Guards</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={3}>
               <ListItem margin="10px 0 0 0">GraphQL ❤</ListItem>
             </Appear>
-            <Appear>
-              <ListItem margin="10px 0 0 0">
-                OpenAPI (Swagger) => examples
-              </ListItem>
+            <Appear order={4}>
+              <ListItem margin="10px 0 0 0">OpenAPI (Swagger)</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={5}>
               <ListItem margin="10px 0 0 0">CORS</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={6}>
               <ListItem margin="10px 0 0 0">Microservices</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={7}>
               <ListItem margin="10px 0 0 0">Websockets</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={8}>
               <ListItem margin="10px 0 0 0">Authentication</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={9}>
               <ListItem margin="10px 0 0 0">
                 ORM (TypeORM, Sequelize, Mongoose)
               </ListItem>
             </Appear>
-            <Appear>
+            <Appear order={10}>
               <ListItem margin="10px 0 0 0">CQRS</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={11}>
               <ListItem margin="10px 0 0 0">Caching</ListItem>
             </Appear>
-            <Appear>
+            <Appear order={12}>
               <ListItem margin="10px 0 0 0">
                 Execution context (CLI, scripting...)
               </ListItem>
