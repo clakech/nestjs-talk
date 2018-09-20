@@ -131,7 +131,7 @@ export default class Presentation extends React.Component {
           bgDarken={0.7}
         >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Front-end development
+            JS Front-end development
           </Heading>
           <Appear>
             <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
@@ -161,7 +161,7 @@ export default class Presentation extends React.Component {
           bgDarken={0.8}
         >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Back-end development
+            JS Back-end development
           </Heading>
           <Appear>
             <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
@@ -176,6 +176,11 @@ export default class Presentation extends React.Component {
           <Appear>
             <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
               Scalability
+            </Text>
+          </Appear>
+          <Appear>
+            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+              Architecture
             </Text>
           </Appear>
         </Slide>
@@ -218,7 +223,9 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="quaternary" margin="40px 0 0 0">
             <Appear>
-              <ListItem margin="10px 0 0 0">Sotware architecture-less</ListItem>
+              <ListItem margin="10px 0 0 0">
+                Software architecture-less
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">Testabilty is tricky</ListItem>
@@ -897,12 +904,7 @@ export default class Presentation extends React.Component {
           <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
-          <Text
-            textColor="quaternary"
-            textSize="2em"
-            margin="20px 0 0 0"
-            bold
-          >
+          <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
             Meilleur Dev de France 2018
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
