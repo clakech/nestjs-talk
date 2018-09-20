@@ -866,7 +866,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Pour les curieu(x|ses)...
           </Heading>
-          <List ordered textColor="quaternary">
+          <List textColor="quaternary">
             <Appear order={1}>
               <ListItem margin="10px 0 0 0">Interceptors</ListItem>
             </Appear>
