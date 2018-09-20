@@ -47,6 +47,7 @@ const images = {
   fwkBack: require("../assets/images/fwk-back.png"),
   fwkBack2: require("../assets/images/fwk-back2.png"),
   go: require("../assets/images/go.gif"),
+  openapi: require("../assets/images/openapi.gif"),
   happy: require("../assets/images/happy.gif"),
   middlewares: require("../assets/images/middlewares.png"),
   modules: require("../assets/images/modules.png"),
@@ -873,6 +874,26 @@ export default class Presentation extends React.Component {
           ]}
         />
 
+        <Slide transition={["slide"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Tada ! 🎉
+          </Heading>
+          <Image src={getImage("openapi")} margin="16px auto" />
+        </Slide>
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
+          code={require("raw-loader!../assets/codes/openapi.sample")}
+          ranges={[
+            {
+              loc: [2, 12],
+              title: "API Model description"
+            }
+          ]}
+        />
+
         <Slide transition={["zoom"]} bgImage={getImage("happy")} />
 
         <Slide transition={["fade"]}>
@@ -930,6 +951,9 @@ export default class Presentation extends React.Component {
           </Heading>
           <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
             NestJS 🚀 @nestframework by @kammysliwiec
+          </Text>
+          <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
+            https://docs.nestjs.com
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
             Meilleur Dev de France 2018

@@ -1,0 +1,12 @@
+import { ApiModelProperty, ApiModelPropertyOptional } from '@nestjs/swagger';
+
+export class CreateCFP {
+  @ApiModelProperty({ required: true, maxLength: 42 })
+  readonly title: string;
+
+  @ApiModelProperty({ required: true })
+  readonly synopsis: string;
+
+  @ApiModelPropertyOptional()
+  readonly notes: string;
+}
