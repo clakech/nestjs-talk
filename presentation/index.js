@@ -855,7 +855,7 @@ export default class Presentation extends React.Component {
             {
               loc: [5, 17],
               title: "OpenAPI auto-generated",
-              note: "go to http://localhost:3000/api"
+              note: "go to http://localhost:3001/api"
             }
           ]}
         />
