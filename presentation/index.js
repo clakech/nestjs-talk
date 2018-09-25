@@ -11,7 +11,9 @@ import {
   Text,
   Appear,
   Image,
-  S
+  S,
+  Layout,
+  Fill
 } from "spectacle";
 
 import CodeSlide from "spectacle-code-slide";
@@ -897,48 +899,78 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgImage={getImage("happy")} />
 
         <Slide transition={["fade"]}>
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          <Heading size={1} fit caps lineHeight={0.5} textColor="secondary">
             Want more ?
           </Heading>
-          <List textColor="quaternary">
-            <Appear order={1}>
-              <ListItem margin="10px 0 0 0">Interceptors</ListItem>
-            </Appear>
-            <Appear order={2}>
-              <ListItem margin="10px 0 0 0">Guards</ListItem>
-            </Appear>
-            <Appear order={3}>
-              <ListItem margin="10px 0 0 0">GraphQL ❤</ListItem>
-            </Appear>
-            <Appear order={4}>
-              <ListItem margin="10px 0 0 0">CORS</ListItem>
-            </Appear>
-            <Appear order={5}>
-              <ListItem margin="10px 0 0 0">Microservices</ListItem>
-            </Appear>
-            <Appear order={6}>
-              <ListItem margin="10px 0 0 0">Websockets</ListItem>
-            </Appear>
-            <Appear order={7}>
-              <ListItem margin="10px 0 0 0">Authentication</ListItem>
-            </Appear>
-            <Appear order={8}>
-              <ListItem margin="10px 0 0 0">
-                ORM (TypeORM, Sequelize, Mongoose)
-              </ListItem>
-            </Appear>
-            <Appear order={9}>
-              <ListItem margin="10px 0 0 0">CQRS</ListItem>
-            </Appear>
-            <Appear order={10}>
-              <ListItem margin="10px 0 0 0">Caching</ListItem>
-            </Appear>
-            <Appear order={11}>
-              <ListItem margin="10px 0 0 0">
-                Execution context (CLI, scripting...)
-              </ListItem>
-            </Appear>
-          </List>
+          <Layout>
+            <Fill>
+              <Heading caps>
+                <List textColor="quaternary">
+                  <Appear order={1}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Interceptors
+                    </ListItem>
+                  </Appear>
+                  <Appear order={2}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Guards
+                    </ListItem>
+                  </Appear>
+                  <Appear order={3}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      GraphQL ❤
+                    </ListItem>
+                  </Appear>
+                  <Appear order={4}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      CORS
+                    </ListItem>
+                  </Appear>
+                  <Appear order={5}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Microservices
+                    </ListItem>
+                  </Appear>
+                  <Appear order={6}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Websockets
+                    </ListItem>
+                  </Appear>
+                </List>
+              </Heading>
+            </Fill>
+            <Fill>
+              <Heading caps>
+                <List textColor="quaternary">
+                  <Appear order={7}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Authentication
+                    </ListItem>
+                  </Appear>
+                  <Appear order={8}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      ORM (TypeORM, Sequelize, Mongoose)
+                    </ListItem>
+                  </Appear>
+                  <Appear order={9}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      CQRS
+                    </ListItem>
+                  </Appear>
+                  <Appear order={10}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Caching
+                    </ListItem>
+                  </Appear>
+                  <Appear order={11}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Execution context (CLI, scripting...)
+                    </ListItem>
+                  </Appear>
+                </List>
+              </Heading>
+            </Fill>
+          </Layout>
         </Slide>
 
         <Slide transition={["slide"]}>
