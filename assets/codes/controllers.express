@@ -1,7 +1,7 @@
-ctrl app = express.Router();
+const router = express.Router();
 
-app.get('/call-for-papers/:id', cfpController.getById);
-app.post('/call-for-papers', cfpController.create);
+router.get('/call-for-papers/:id', cfpController.getById);
+router.post('/call-for-papers', cfpController.create);
 
 // cfp-controller.js
 export class CFPController {  
