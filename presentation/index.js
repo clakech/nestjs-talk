@@ -230,7 +230,7 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">Testabilty is tricky</ListItem>
+              <ListItem margin="10px 0 0 0">Testability is tricky</ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
