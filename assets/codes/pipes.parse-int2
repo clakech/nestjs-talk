@@ -1,0 +1,4 @@
+@Get(':id')
+async findOne(@Param('id', new ParseIntPipe()) id) {
+  return await this.cfp.findOne(id);
+}

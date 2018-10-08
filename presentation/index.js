@@ -824,6 +824,19 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
+          code={require("raw-loader!../assets/codes/pipes.parse-int2")}
+          ranges={[
+            {
+              loc: [1, 2],
+              title: "Apply ParseIntPipe"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
           code={require("raw-loader!../assets/codes/pipes.global")}
           ranges={[
             { loc: [2, 3], title: "Global Pipe" },
