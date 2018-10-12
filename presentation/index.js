@@ -105,9 +105,6 @@ export default class Presentation extends React.Component {
             ♥️ developer community
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
-            🐱‍💻 hacking status quo
-          </Text>
-          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
             🐦 @cyril_lakech
           </Text>
         </Slide>
