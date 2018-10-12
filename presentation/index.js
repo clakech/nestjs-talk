@@ -293,7 +293,7 @@ export default class Presentation extends React.Component {
               <ListItem margin="10px 0 0 0">Respects SOLID principles</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">DDD ready</ListItem>
+              <ListItem margin="10px 0 0 0">DDD ready !</ListItem>
             </Appear>
           </List>
         </Slide>
