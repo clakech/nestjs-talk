@@ -538,7 +538,7 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <CodeSlide
+        {/* <CodeSlide
           transition={["fade"]}
           lang="js"
           textSize=".6em"
@@ -587,7 +587,7 @@ export default class Presentation extends React.Component {
               title: "Use factory"
             }
           ]}
-        />
+        /> */}
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -642,7 +642,7 @@ export default class Presentation extends React.Component {
           ranges={[{ loc: [7, 11], title: "Exclude" }]}
         />
 
-        <CodeSlide
+        {/* <CodeSlide
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -652,7 +652,7 @@ export default class Presentation extends React.Component {
             { loc: [3, 4], title: "Some async job" },
             { loc: [5, 10], title: "Return async function" }
           ]}
-        />
+        /> */}
 
         <CodeSlide
           transition={["fade"]}
