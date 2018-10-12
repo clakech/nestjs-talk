@@ -912,6 +912,12 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgImage={getImage("happy")} />
 
         <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            REX
+          </Heading>
+        </Slide>
+
+        <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={0.5} textColor="secondary">
             Want more ?
           </Heading>
