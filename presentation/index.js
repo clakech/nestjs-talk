@@ -193,7 +193,7 @@ export default class Presentation extends React.Component {
           bgDarken={0.5}
         >
           <Heading size={1} fit caps lineHeight={1} textColor="white">
-            Architecture ?
+            Software <br /> Architecture ?
           </Heading>
         </Slide>
 
