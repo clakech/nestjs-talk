@@ -226,11 +226,13 @@ export default class Presentation extends React.Component {
           <List textColor="quaternary" margin="40px 0 0 0">
             <Appear>
               <ListItem margin="10px 0 0 0">
-                Software architecture-less
+                "Software architecture"-less
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">Testability is tricky</ListItem>
+              <ListItem margin="10px 0 0 0">
+                Lacks of helpers for daily job
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem margin="10px 0 0 0">
