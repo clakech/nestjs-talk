@@ -13,7 +13,8 @@ import {
   Image,
   S,
   Layout,
-  Fill
+  Fill,
+  Notes
 } from "spectacle";
 
 import CodeSlide from "spectacle-code-slide";
@@ -161,6 +162,7 @@ export default class Presentation extends React.Component {
               Architecture
             </Text>
           </Appear>
+          <Notes>Cyril</Notes>
         </Slide>
 
         <Slide
@@ -314,6 +316,7 @@ export default class Presentation extends React.Component {
               Controllers
             </Heading>
           </Appear>
+          <Notes>Laurent</Notes>
         </Slide>
 
         <Slide transition={["slide"]}>
@@ -446,6 +449,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Modules
           </Heading>
+          <Notes>Cyril</Notes>
         </Slide>
 
         <Slide transition={["slide"]}>
@@ -601,6 +605,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Middlewares
           </Heading>
+          <Notes>Laurent</Notes>
         </Slide>
 
         <Slide transition={["slide"]}>
@@ -674,6 +679,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Exception filters
           </Heading>
+          <Notes>Cyril</Notes>
         </Slide>
 
         <Slide transition={["slide"]}>
@@ -771,6 +777,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Pipes
           </Heading>
+          <Notes>Laurent</Notes>
         </Slide>
 
         <Slide transition={["slide"]}>
@@ -856,6 +863,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Testing
           </Heading>
+          <Notes>Cyril</Notes>
         </Slide>
 
         <CodeSlide
@@ -881,6 +889,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             API Doc
           </Heading>
+          <Notes>Cyril</Notes>
         </Slide>
 
         <CodeSlide
@@ -923,6 +932,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             REX
           </Heading>
+          <Notes>Cyril</Notes>
         </Slide>
 
         <Slide transition={["fade"]}>
@@ -1012,7 +1022,7 @@ export default class Presentation extends React.Component {
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
-            Meilleur Dev de France 2018
+            #MDF18
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
             @cyril_lakech & @lauthieb
