@@ -102,7 +102,7 @@ export default class Presentation extends React.Component {
             🏢 AXA France
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
-            ♥️ developer community & 🍺
+            ♥️ dev community & 🍺
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
             🐦 @cyril_lakech
