@@ -364,7 +364,7 @@ export default class Presentation extends React.Component {
             {
               loc: [16, 20],
               title: "HTTP POST route with a @Body",
-              note: "Request's body is extracted in createDFP"
+              note: "Request's body is extracted in createCFP"
             }
           ]}
         />
