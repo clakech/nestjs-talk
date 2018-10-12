@@ -85,6 +85,9 @@ export default class Presentation extends React.Component {
           <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
             @cyril_lakech & @lauthieb
           </Text>
+          <Text textColor="quaternary" bold textSize="1em" margin="24px 0 0 0">
+            https://axaguildev.github.io/nestjs-talk
+          </Text>
           <Image src={getImage("axa")} width="100" margin="16px auto" />
         </Slide>
 
@@ -1003,14 +1006,14 @@ export default class Presentation extends React.Component {
           <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
-            https://docs.nestjs.com
-          </Text>
           <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
             Meilleur Dev de France 2018
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
             @cyril_lakech & @lauthieb
+          </Text>
+          <Text textColor="quaternary" bold textSize="1em" margin="24px 0 0 0">
+            https://axaguildev.github.io/nestjs-talk
           </Text>
           <Image src={getImage("axa")} width="100" margin="16px auto" />
         </Slide>
