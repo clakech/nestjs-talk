@@ -127,6 +127,12 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            You ?
+          </Heading>
+        </Slide>
+
         <Slide
           transition={["fade"]}
           bgImage={getImage("production")}
