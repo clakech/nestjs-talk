@@ -14,7 +14,10 @@ describe('CFPController', () => {
     const module = await Test.createTestingModule({
         controllers: [CFPController],
         providers: [CFPService],
-      }).compile();
+      })
+      .overrideProvider(CFPService)
+      .useValue(cfpServiceMock)
+      .compile();
 
     cfpController = module.get<CFPController>(CFPController);
   });

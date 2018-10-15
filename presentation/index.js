@@ -132,6 +132,34 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             You ?
           </Heading>
+          <Notes>
+            <ol>
+              <li>
+                Si vous êtes dev, levez-vous svp (levez la main si vous ne
+                pouvez pas vous lever)
+              </li>
+              <li>
+                Si vous développez en JS, restez debout. Les autres
+                asseyez-vous.
+              </li>
+              <li>
+                Si vous développez en NodeJS, restez debout. Les autres
+                asseyez-vous.
+              </li>
+              <li>
+                Si vous développez avec ExpressJS, restez debout. Les autres
+                asseyez-vous.
+              </li>
+              <li>
+                Si vous développez avec TypeScript, restez debout. Les autres
+                asseyez-vous.
+              </li>
+              <li>
+                Si vous développez avec NestJS, restez debout. Les autres
+                asseyez-vous.
+              </li>
+            </ol>
+          </Notes>
         </Slide>
 
         <Slide
@@ -738,6 +766,19 @@ export default class Presentation extends React.Component {
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
+          code={require("raw-loader!../assets/codes/exception-filters.use-filters-class")}
+          ranges={[
+            {
+              loc: [0, 2],
+              title: "@UseFilters on class"
+            }
+          ]}
+        />
+
+        <CodeSlide
+          transition={["fade"]}
+          lang="jsx"
+          textSize=".6em"
           code={require("raw-loader!../assets/codes/exception-filters.catch-all")}
           ranges={[
             {
@@ -746,19 +787,6 @@ export default class Presentation extends React.Component {
             },
             { loc: [2, 3], title: "Use @Catch()" },
             { loc: [2, 18], title: "All Exceptions Filter" }
-          ]}
-        />
-
-        <CodeSlide
-          transition={["fade"]}
-          lang="jsx"
-          textSize=".6em"
-          code={require("raw-loader!../assets/codes/exception-filters.use-filters-class")}
-          ranges={[
-            {
-              loc: [0, 2],
-              title: "@UseFilters on class"
-            }
           ]}
         />
 
@@ -878,10 +906,10 @@ export default class Presentation extends React.Component {
               title: "Test suite for CFPController"
             },
             {
-              loc: [10, 20],
+              loc: [10, 22],
               title: "Init module & get controller before each test"
             },
-            { loc: [22, 30], title: "Create test" }
+            { loc: [24, 32], title: "Create test" }
           ]}
         />
 

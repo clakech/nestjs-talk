@@ -8,7 +8,7 @@ export class NotFoundExceptionFilter implements ExceptionFilter {
     const request = ctx.getRequest();
     const status = exception.getStatus();
     
-    this.loggerService.warn('Uncaught a not found exception', exception);
+    this.loggerService.warn('Oops just caught a not found exception', exception);
 
     response
       .status(status)
