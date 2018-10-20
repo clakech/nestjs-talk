@@ -1001,35 +1001,45 @@ export default class Presentation extends React.Component {
                       Websockets
                     </ListItem>
                   </Appear>
+                  <Appear order={7}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      CLI
+                    </ListItem>
+                  </Appear>
                 </List>
               </Heading>
             </Fill>
             <Fill>
               <Heading caps>
                 <List textColor="quaternary">
-                  <Appear order={7}>
+                  <Appear order={8}>
                     <ListItem margin="10px 0 0 0" textSize="0.3em">
                       Authentication
                     </ListItem>
                   </Appear>
-                  <Appear order={8}>
+                  <Appear order={9}>
                     <ListItem margin="10px 0 0 0" textSize="0.3em">
                       ORM (TypeORM, Sequelize, Mongoose)
                     </ListItem>
                   </Appear>
-                  <Appear order={9}>
+                  <Appear order={10}>
                     <ListItem margin="10px 0 0 0" textSize="0.3em">
                       CQRS
                     </ListItem>
                   </Appear>
-                  <Appear order={10}>
+                  <Appear order={11}>
                     <ListItem margin="10px 0 0 0" textSize="0.3em">
                       Caching
                     </ListItem>
                   </Appear>
-                  <Appear order={11}>
+                  <Appear order={12}>
                     <ListItem margin="10px 0 0 0" textSize="0.3em">
-                      Execution context (CLI, scripting...)
+                      Execution context
+                    </ListItem>
+                  </Appear>
+                  <Appear order={13}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      Prisma
                     </ListItem>
                   </Appear>
                 </List>
