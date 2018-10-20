@@ -1042,6 +1042,11 @@ export default class Presentation extends React.Component {
                       Prisma
                     </ListItem>
                   </Appear>
+                  <Appear order={14}>
+                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                      ...
+                    </ListItem>
+                  </Appear>
                 </List>
               </Heading>
             </Fill>
