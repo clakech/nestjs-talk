@@ -1,19 +1,15 @@
 import { CFPModule } from 'cfp/cfp.module';
-import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
-import { GraphQLModule, GraphQLFactory } from '@nestjs/graphql';
+import { Module } from '@nestjs/common';
+import { GraphQLModule } from '@nestjs/graphql';
 
 @Module({
   imports: [
+    CFPModule,
     GraphQLModule.forRoot({
       typePaths: ['./**/*.graphql'],
       debug: true,
       playground: true,
-      introspection: true,
-      context: ({ req }) => ({
-        request: req,
-      }),
     }),
-    CFPModule,
   ],
 })
 export class AppModule {}

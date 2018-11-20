@@ -1,3 +1,8 @@
+type Query {
+  callForPapers: [CallForPaper]
+  callForPaperById(id: String!): CallForPaper
+}
+
 type CallForPaper {
   id: String
   endDate: String
@@ -13,6 +18,3 @@ type Conference {
   url: String
 }
 
-type Query {
-  callForPapers: [CallForPaper]
-}

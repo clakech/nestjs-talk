@@ -1,4 +1,5 @@
 export interface Conference {
+  cfpId: string;
   name?: string;
   location?: string;
   startDate?: Date;
