@@ -1,4 +1,4 @@
-import { CallForPaper } from "./entities/call-for-paper.entity";
+import { CallForPaper } from './entities/call-for-paper.entity';
 import {
   Get,
   Controller,
@@ -9,12 +9,12 @@ import {
   Delete,
   Patch,
   Put,
-  ForbiddenException
-} from "@nestjs/common";
-import { CFPService } from "./cfp.service";
-import { updateLocale } from "../../node_modules/moment";
+  ForbiddenException,
+} from '@nestjs/common';
+import { CFPService } from './cfp.service';
+import { updateLocale } from '../../node_modules/moment';
 
-@Controller("call-for-papers")
+@Controller('call-for-papers')
 export class CFPController {
   constructor(private readonly cfpService: CFPService) {}
 
@@ -28,8 +28,8 @@ export class CFPController {
     return this.cfpService.findAll();
   }
 
-  @Get(":id")
-  findOne(@Param("id") id: string): CallForPaper {
+  @Get(':id')
+  findOne(@Param('id') id: string): CallForPaper {
     const cfp = this.cfpService.findOne(id);
 
     if (!cfp) {
@@ -39,8 +39,8 @@ export class CFPController {
     return cfp;
   }
 
-  @Put(":id")
-  update(@Param("id") id: string, @Body() newCFP: CallForPaper): CallForPaper {
+  @Put(':id')
+  update(@Param('id') id: string, @Body() newCFP: CallForPaper): CallForPaper {
     if (newCFP.id !== id) {
       throw new ForbiddenException();
     }
@@ -53,8 +53,8 @@ export class CFPController {
     return this.cfpService.update(id, newCFP);
   }
 
-  @Delete(":id")
-  delete(@Param("id") id: string): void {
+  @Delete(':id')
+  delete(@Param('id') id: string): void {
     const cfp = this.cfpService.findOne(id);
 
     if (!cfp) {
