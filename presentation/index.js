@@ -66,6 +66,7 @@ const images = {
   industrial: require("../assets/images/industrial.jpg")
 };
 
+// eslint-disable-next-line func-style
 function getImage(img) {
   return images[img].replace("/", "");
 }
