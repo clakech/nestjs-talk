@@ -114,24 +114,6 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
-        {/* <Slide transition={["fade"]} bgImage={getImage("city")} bgDarken={0.7}>
-          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
-            Laurent Thiebault
-          </Heading>
-          <Text textColor="quaternary" textSize="2em" margin="30px 0 0 0">
-            💼 Software Engineer
-          </Text>
-          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
-            🏢 AXA France
-          </Text>
-          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
-            ♥️ open source, music & 🍺
-          </Text>
-          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
-            🐦 @lauthieb
-          </Text>
-        </Slide> */}
-
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             You ?
