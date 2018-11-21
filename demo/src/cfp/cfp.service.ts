@@ -76,7 +76,7 @@ export class CFPService {
     this.callForPapers = this.callForPapers.filter(cfp => cfp.id !== id);
   }
 
-  findConferenceByCFP(id: string): Conference {
+  findConferenceByCFP(id: string) {
     return this.conferences.find(c => c.cfpId === id);
   }
 }
