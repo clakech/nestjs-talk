@@ -55,6 +55,9 @@ const images = {
   middlewares: require("../assets/images/middlewares.png"),
   modules: require("../assets/images/modules.png"),
   nest: require("../assets/images/nest.png"),
+  graphqlQuery: require("../assets/images/query.png"),
+  graphqlMutation: require("../assets/images/mutation.png"),
+  graphqlSub: require("../assets/images/sub.png"),
   pipes: require("../assets/images/pipes.png"),
   production: require("../assets/images/production.gif"),
   production2: require("../assets/images/production2.gif"),
@@ -1067,6 +1070,18 @@ export default class Presentation extends React.Component {
             </Heading>
           </Appear>
           <Notes>Cyril</Notes>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("graphqlQuery")} margin="16px auto" />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("graphqlMutation")} margin="16px auto" />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("graphqlSub")} margin="16px auto" />
         </Slide>
 
         <Slide transition={["slide"]}>
