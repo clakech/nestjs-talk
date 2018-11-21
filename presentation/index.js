@@ -81,10 +81,10 @@ export default class Presentation extends React.Component {
             NestJS 🚀
           </Heading>
           <Text textColor="quaternary" textSize="2em" margin="60px 0 0 0" bold>
-            Meilleur Dev de France 2018
+            DevDay 2018
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
-            @cyril_lakech & @lauthieb
+            @cyril_lakech (& @lauthieb)
           </Text>
           <Text textColor="quaternary" bold textSize="1em" margin="24px 0 0 0">
             https://axaguildev.github.io/nestjs-talk
@@ -110,7 +110,7 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
-        <Slide transition={["fade"]} bgImage={getImage("city")} bgDarken={0.7}>
+        {/* <Slide transition={["fade"]} bgImage={getImage("city")} bgDarken={0.7}>
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Laurent Thiebault
           </Heading>
@@ -126,7 +126,7 @@ export default class Presentation extends React.Component {
           <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
             🐦 @lauthieb
           </Text>
-        </Slide>
+        </Slide> */}
 
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -1057,6 +1057,22 @@ export default class Presentation extends React.Component {
           <Image src={getImage("nest")} margin="16px auto" />
         </Slide>
 
+        <Slide transition={["fade"]}>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            GraphQL
+          </Heading>
+          <Appear>
+            <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+              Demo
+            </Heading>
+          </Appear>
+          <Notes>Cyril</Notes>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Image src={getImage("nest")} margin="16px auto" />
+        </Slide>
+
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Thanks !
@@ -1065,10 +1081,10 @@ export default class Presentation extends React.Component {
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
-            #MDF18
+            DevDay 2018
           </Text>
           <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
-            @cyril_lakech & @lauthieb
+            @cyril_lakech (& @lauthieb)
           </Text>
           <Text textColor="quaternary" bold textSize="1em" margin="24px 0 0 0">
             https://axaguildev.github.io/nestjs-talk
