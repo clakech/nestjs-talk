@@ -1039,10 +1039,6 @@ export default class Presentation extends React.Component {
           </Layout>
         </Slide>
 
-        <Slide transition={["slide"]}>
-          <Image src={getImage("nest")} margin="16px auto" />
-        </Slide>
-
         <Slide transition={["fade"]}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             GraphQL
@@ -1055,17 +1051,11 @@ export default class Presentation extends React.Component {
           <Notes>Cyril</Notes>
         </Slide>
 
-        <Slide transition={["slide"]}>
-          <Image src={getImage("graphqlQuery")} margin="16px auto" />
-        </Slide>
+        <Slide transition={["slide"]} bgImage={getImage("graphqlQuery")} />
 
-        <Slide transition={["slide"]}>
-          <Image src={getImage("graphqlMutation")} margin="16px auto" />
-        </Slide>
+        <Slide transition={["slide"]} bgImage={getImage("graphqlMutation")} />
 
-        <Slide transition={["slide"]}>
-          <Image src={getImage("graphqlSub")} margin="16px auto" />
-        </Slide>
+        <Slide transition={["slide"]} bgImage={getImage("graphqlSub")} />
 
         <Slide transition={["slide"]}>
           <Image src={getImage("nest")} margin="16px auto" />
@@ -1073,7 +1063,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Thanks !
+            Merci !
           </Heading>
           <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
             NestJS 🚀 @nestframework by @kammysliwiec
