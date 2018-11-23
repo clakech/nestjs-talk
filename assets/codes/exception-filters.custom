@@ -7,7 +7,7 @@ export class CoolitudeExceptionFilter implements ExceptionFilter {
     const response = ctx.getResponse();
     const request = ctx.getRequest();
     
-    this.loggerService.warn('Oops just caught a coolitude exception', exception);
+    this.loggerService.warn('Oops 😎 cool exception !', exception);
 
     response
       .status(451)
