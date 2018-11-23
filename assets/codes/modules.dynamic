@@ -1,5 +1,5 @@
 import { Module, DynamicModule } from '@nestjs/common';
-import { createDatabaseProviders } from './database.providers';
+import { createDBProviders } from './database.providers';
 import { Connection } from './connection.provider';
 
 @Module({
@@ -7,7 +7,7 @@ import { Connection } from './connection.provider';
 })
 export class DatabaseModule {
   static forRoot(entities = [], options?): DynamicModule {
-    const providers = createDatabaseProviders(options, entities);
+    const providers = createDBProviders(options, entities);
     return {
       module: DatabaseModule,
       providers: providers,

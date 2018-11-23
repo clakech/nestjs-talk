@@ -78,7 +78,8 @@ export default class Presentation extends React.Component {
         transition={["zoom", "slide"]}
         transitionDuration={500}
         theme={theme}
-        progress="pacman"
+        contentWidth="1280px"
+        contentHeight="1024px"
       >
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -87,10 +88,10 @@ export default class Presentation extends React.Component {
           <Text textColor="quaternary" textSize="2em" margin="60px 0 0 0" bold>
             DevDay 2018
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="24px 0 0 0">
             @cyril_lakech (& @lauthieb)
           </Text>
-          <Text textColor="quaternary" bold textSize="1em" margin="24px 0 0 0">
+          <Text textColor="quaternary" bold textSize="2em" margin="24px 0 0 0">
             https://axaguildev.github.io/nestjs-talk
           </Text>
           <Image src={getImage("axa")} width="100" margin="16px auto" />
@@ -100,16 +101,16 @@ export default class Presentation extends React.Component {
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Cyril Lakech
           </Heading>
-          <Text textColor="quaternary" textSize="2em" margin="30px 0 0 0">
+          <Text textColor="quaternary" textSize="3em" margin="30px 0 0 0">
             💼 Tech Leader
           </Text>
-          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
+          <Text textColor="quaternary" textSize="3em" margin="10px 0 0 0">
             🏢 AXA France
           </Text>
-          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
+          <Text textColor="quaternary" textSize="3em" margin="10px 0 0 0">
             ♥️ dev community & 🍺
           </Text>
-          <Text textColor="quaternary" textSize="2em" margin="10px 0 0 0">
+          <Text textColor="quaternary" textSize="3em" margin="10px 0 0 0">
             🐦 @cyril_lakech
           </Text>
         </Slide>
@@ -157,22 +158,22 @@ export default class Presentation extends React.Component {
             JS Front-end development
           </Heading>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="3em" margin="20px 0 0 0">
               Productivity
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="3em" margin="20px 0 0 0">
               Performance
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="3em" margin="20px 0 0 0">
               Scalability
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="3em" margin="20px 0 0 0">
               Architecture
             </Text>
           </Appear>
@@ -188,22 +189,22 @@ export default class Presentation extends React.Component {
             JS Back-end development
           </Heading>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="3em" margin="20px 0 0 0">
               Productivity
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="3em" margin="20px 0 0 0">
               Performance
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="3em" margin="20px 0 0 0">
               Scalability
             </Text>
           </Appear>
           <Appear>
-            <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0">
+            <Text textColor="quaternary" textSize="1em" margin="20px 0 0 0">
               Architecture
             </Text>
           </Appear>
@@ -247,17 +248,17 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="quaternary" margin="40px 0 0 0">
             <Appear>
-              <ListItem margin="10px 0 0 0">
+              <ListItem textSize="2em" margin="10px 0 0 0">
                 "Software architecture"-less
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">
+              <ListItem textSize="2em" margin="10px 0 0 0">
                 Lacks of helpers for daily job
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">
+              <ListItem textSize="2em" margin="10px 0 0 0">
                 Middlewares all the things !
               </ListItem>
             </Appear>
@@ -296,25 +297,29 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="quaternary">
             <Appear>
-              <ListItem margin="10px 0 0 0">
+              <ListItem textSize="2em" margin="10px 0 0 0">
                 Opinionated, the Angular way
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">
+              <ListItem textSize="2em" margin="10px 0 0 0">
                 Express based & Fastify compatible 🚀
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">
+              <ListItem textSize="2em" margin="10px 0 0 0">
                 <S type="bold">Written in TypeScript</S>
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">Respects SOLID principles</ListItem>
+              <ListItem textSize="2em" margin="10px 0 0 0">
+                Respects SOLID principles
+              </ListItem>
             </Appear>
             <Appear>
-              <ListItem margin="10px 0 0 0">DDD ready !</ListItem>
+              <ListItem textSize="2em" margin="10px 0 0 0">
+                DDD ready !
+              </ListItem>
             </Appear>
           </List>
         </Slide>
@@ -338,6 +343,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -359,6 +365,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -387,6 +394,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -418,6 +426,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -429,6 +438,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -447,6 +457,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="js"
           textSize=".6em"
@@ -471,6 +482,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -481,6 +493,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -489,6 +502,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -510,6 +524,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -527,6 +542,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -544,6 +560,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -564,7 +581,7 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        {/* <CodeSlide
+        {/* <CodeSlide           className="codeslide--cyril"
           transition={["fade"]}
           lang="js"
           textSize=".6em"
@@ -589,7 +606,7 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <CodeSlide
+        <CodeSlide           className="codeslide--cyril"
           transition={["fade"]}
           lang="js"
           textSize=".6em"
@@ -602,7 +619,7 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <CodeSlide
+        <CodeSlide           className="codeslide--cyril"
           transition={["fade"]}
           lang="js"
           textSize=".6em"
@@ -627,6 +644,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -638,6 +656,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -650,6 +669,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -662,6 +682,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -669,7 +690,7 @@ export default class Presentation extends React.Component {
           ranges={[{ loc: [7, 11], title: "Exclude" }]}
         />
 
-        {/* <CodeSlide
+        {/* <CodeSlide           className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -682,6 +703,7 @@ export default class Presentation extends React.Component {
         /> */}
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -701,6 +723,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -715,6 +738,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -722,19 +746,20 @@ export default class Presentation extends React.Component {
           ranges={[
             {
               loc: [0, 21],
-              title: "404 Not Found filter"
+              title: "Error filter"
             },
             { loc: [0, 1], title: "Use @Catch" },
             { loc: [1, 2], title: "Class implementing ExceptionFilter" },
             { loc: [2, 3], title: "Logger service injection" },
             { loc: [4, 20], title: "Catch function" },
-            { loc: [5, 9], title: "Get some values" },
-            { loc: [10, 11], title: "Warning in logs" },
-            { loc: [12, 19], title: "Change the response" }
+            { loc: [5, 8], title: "Get some values" },
+            { loc: [9, 10], title: "Warning in logs" },
+            { loc: [11, 17], title: "Change the response" }
           ]}
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -749,6 +774,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -762,6 +788,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -777,6 +804,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -799,6 +827,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -813,6 +842,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -833,6 +863,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -850,6 +881,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -863,6 +895,7 @@ export default class Presentation extends React.Component {
         />
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -881,6 +914,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -907,6 +941,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -928,6 +963,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <CodeSlide
+          className="codeslide--cyril"
           transition={["fade"]}
           lang="jsx"
           textSize=".6em"
@@ -958,37 +994,37 @@ export default class Presentation extends React.Component {
               <Heading caps>
                 <List textColor="quaternary">
                   <Appear order={1}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Interceptors
                     </ListItem>
                   </Appear>
                   <Appear order={2}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Guards
                     </ListItem>
                   </Appear>
                   <Appear order={3}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       GraphQL ❤
                     </ListItem>
                   </Appear>
                   <Appear order={4}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       CORS
                     </ListItem>
                   </Appear>
                   <Appear order={5}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Microservices
                     </ListItem>
                   </Appear>
                   <Appear order={6}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Websockets
                     </ListItem>
                   </Appear>
                   <Appear order={7}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       CLI
                     </ListItem>
                   </Appear>
@@ -999,37 +1035,37 @@ export default class Presentation extends React.Component {
               <Heading caps>
                 <List textColor="quaternary">
                   <Appear order={8}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Authentication
                     </ListItem>
                   </Appear>
                   <Appear order={9}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       ORM (TypeORM, Sequelize, Mongoose)
                     </ListItem>
                   </Appear>
                   <Appear order={10}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       CQRS
                     </ListItem>
                   </Appear>
                   <Appear order={11}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Caching
                     </ListItem>
                   </Appear>
                   <Appear order={12}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Execution context
                     </ListItem>
                   </Appear>
                   <Appear order={13}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       Prisma
                     </ListItem>
                   </Appear>
                   <Appear order={14}>
-                    <ListItem margin="10px 0 0 0" textSize="0.3em">
+                    <ListItem margin="10px 0 0 0" textSize="0.5em">
                       ...
                     </ListItem>
                   </Appear>
@@ -1065,16 +1101,16 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Merci !
           </Heading>
-          <Text textColor="quaternary" textSize="1em" margin="60px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="60px 0 0 0">
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
             DevDay 2018
           </Text>
-          <Text textColor="quaternary" textSize="1em" margin="24px 0 0 0">
+          <Text textColor="quaternary" textSize="2em" margin="24px 0 0 0">
             @cyril_lakech (& @lauthieb)
           </Text>
-          <Text textColor="quaternary" bold textSize="1em" margin="24px 0 0 0">
+          <Text textColor="quaternary" bold textSize="2em" margin="24px 0 0 0">
             https://axaguildev.github.io/nestjs-talk
           </Text>
           <Image src={getImage("axa")} width="100" margin="16px auto" />

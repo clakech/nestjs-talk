@@ -1,10 +1,10 @@
-@UseFilters(NotFoundExceptionFilter)
-@Get(':id')
-find(@Param('id') cfpId: string) {
-  const cfp = await this.cfpService.findOne({ cfpId });  
+@UseFilters(CoolitudeExceptionFilter)
+@Post('promote/:id')
+promote(@Param('id') cfpId: string) {
+  const cfp = await this.cfpService.promote(cfpId);
 
-  if (!cfp) {
-    throw new NotFoundException();
+  if (cfp.coolitude === 42) {
+    throw new CoolitudeException();
   }
 
   return cfp;

@@ -7,7 +7,7 @@ import {
 } from '@nestjs/common';
 
 import { CFPService } from './cfp.service';
-import { CallForPaper } from './interfaces/call-for-paper.interface';
+import { CallForPaper } from './interfaces/cfp.interface';
 
 @Controller('call-for-papers')
 export class CFPController {

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CallForPaper } from './interfaces/call-for-paper.interface';
+import { CallForPaper } from './interfaces/cfp.interface';
 
 @Injectable()
 export class CFPService {

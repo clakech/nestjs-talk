@@ -5,5 +5,13 @@ code {
 .spectacle-content pre + div {
   border: 1px solid white;
   background-color: #3c3b3b !important;
-  font-size: larger;
+  font-size: 2em;
+}
+
+.codeslide--cyril pre {
+  font-size: 2.5em !important;
+}
+
+.codeslide--cyril h1 {
+  font-size: 4em !important;
 }

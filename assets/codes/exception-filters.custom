@@ -1,19 +1,17 @@
-@Catch(NotFoundException)
-export class NotFoundExceptionFilter implements ExceptionFilter {  
+@Catch(CoolitudeException)
+export class CoolitudeExceptionFilter implements ExceptionFilter {  
   constructor(private readonly loggerService: LoggerService) {}
 
   catch(exception: HttpException, host: ArgumentsHost) {
     const ctx = host.switchToHttp();
     const response = ctx.getResponse();
     const request = ctx.getRequest();
-    const status = exception.getStatus();
     
-    this.loggerService.warn('Oops just caught a not found exception', exception);
+    this.loggerService.warn('Oops just caught a coolitude exception', exception);
 
     response
-      .status(status)
+      .status(451)
       .json({
-        statusCode: status,
         timestamp: new Date().toISOString(),
         path: request.url,
       });
