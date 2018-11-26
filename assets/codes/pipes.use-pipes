@@ -1,5 +1,5 @@
 @Post()
 @UsePipes(new ValidationPipe())
-create(@Body() createCFP) {
+create(@Body() createCFP: CreateCFP) {
   return `This action creates the CFP (${createCFP.url})`;
 }
