@@ -42,7 +42,8 @@ const theme = createTheme(
 );
 
 const images = {
-  axa: require("../assets/images/axa.png"),
+  qima: require("../assets/images/qima.png"),
+  qima2: require("../assets/images/qima2.png"),
   city: require("../assets/images/city.jpg"),
   controllers: require("../assets/images/controllers.png"),
   desert: require("../assets/images/desert.jpg"),
@@ -80,21 +81,22 @@ export default class Presentation extends React.Component {
         theme={theme}
         contentWidth="1280px"
         contentHeight="1024px"
+        progress="bar"
       >
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             NestJS 🚀
           </Heading>
           <Text textColor="quaternary" textSize="2em" margin="60px 0 0 0" bold>
-            DevDay 2018
+            Confoo 2019
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="24px 0 0 0">
             @cyril_lakech (& @lauthieb)
           </Text>
           <Text textColor="quaternary" bold textSize="2em" margin="24px 0 0 0">
-            https://axaguildev.github.io/nestjs-talk
+            https://clakech.github.io/nestjs-talk
           </Text>
-          <Image src={getImage("axa")} width="100" margin="16px auto" />
+          <Image src={getImage("qima")} width="200" margin="16px auto" />
         </Slide>
 
         <Slide transition={["fade"]} bgImage={getImage("city")} bgDarken={0.7}>
@@ -102,10 +104,10 @@ export default class Presentation extends React.Component {
             Cyril Lakech
           </Heading>
           <Text textColor="quaternary" textSize="3em" margin="30px 0 0 0">
-            💼 Tech Leader
+            💼 Software Engineer / Director
           </Text>
           <Text textColor="quaternary" textSize="3em" margin="10px 0 0 0">
-            🏢 AXA France
+            🏢 QIMA
           </Text>
           <Text textColor="quaternary" textSize="3em" margin="10px 0 0 0">
             ♥️ dev community & 🍺
@@ -113,6 +115,12 @@ export default class Presentation extends React.Component {
           <Text textColor="quaternary" textSize="3em" margin="10px 0 0 0">
             🐦 @cyril_lakech
           </Text>
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={getImage("qima2")}
+        >
         </Slide>
 
         <Slide transition={["fade"]}>
@@ -1105,15 +1113,15 @@ export default class Presentation extends React.Component {
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
-            DevDay 2018
+            Confoo 2019
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="24px 0 0 0">
             @cyril_lakech (& @lauthieb)
           </Text>
           <Text textColor="quaternary" bold textSize="2em" margin="24px 0 0 0">
-            https://axaguildev.github.io/nestjs-talk
+            https://clakech.github.io/nestjs-talk
           </Text>
-          <Image src={getImage("axa")} width="100" margin="16px auto" />
+          <Image src={getImage("qima")} width="200" margin="16px auto" />
         </Slide>
       </Deck>
     );
