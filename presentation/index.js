@@ -416,7 +416,7 @@ export default class Presentation extends React.Component {
               loc: [9, 14],
               title: "@Query",
               note:
-                "POST https://app/call-for-papers/search?conference_name=DevoxxFrance"
+                "POST https://app/call-for-papers/search?conference_name=Confoo"
             },
             { loc: [15, 19], title: "Route wildcards" },
             { loc: [20, 25], title: "Custom Status code" }
