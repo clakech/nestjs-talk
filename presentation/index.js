@@ -24,6 +24,7 @@ import createTheme from "spectacle/lib/themes/default";
 
 import "prismjs/themes/prism-okaidia.css";
 import "./index.css";
+import Footer from "../footer";
 
 // Require CSS
 require("normalize.css");
@@ -76,6 +77,8 @@ function getImage(img) {
 export default class Presentation extends React.Component {
   render() {
     return (
+      <div>
+      <Footer/>
       <Deck
         transition={["zoom", "slide"]}
         transitionDuration={500}
@@ -164,7 +167,7 @@ export default class Presentation extends React.Component {
           bgDarken={0.6}
         >
           <Heading size={1} fit caps lineHeight={1} textColor="white">
-            Slid.do
+            Sli.do
           </Heading>
           <Heading size={1} fit caps lineHeight={1} textColor="black">
             NestJS
@@ -1138,6 +1141,6 @@ export default class Presentation extends React.Component {
           <Image src={getImage("qima")} width="200" margin="16px auto" />
         </Slide>
       </Deck>
-    );
+      </div>);
   }
 }
