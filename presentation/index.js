@@ -64,7 +64,8 @@ const images = {
   production2: require("../assets/images/production2.gif"),
   providers: require("../assets/images/providers.png"),
   unopinionated: require("../assets/images/unopinionated.gif"),
-  industrial: require("../assets/images/industrial.jpg")
+  industrial: require("../assets/images/industrial.jpg"),
+  questions: require("../assets/images/q.gif")
 };
 
 // eslint-disable-next-line func-style
@@ -88,7 +89,7 @@ export default class Presentation extends React.Component {
             NestJS 🚀
           </Heading>
           <Text textColor="quaternary" textSize="2em" margin="60px 0 0 0" bold>
-            Confoo 2019
+            Confoo Montreal 2019
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="24px 0 0 0">
             @cyril_lakech (& @lauthieb)
@@ -155,6 +156,19 @@ export default class Presentation extends React.Component {
               </li>
             </ol>
           </Notes>
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={getImage("questions")}
+          bgDarken={0.6}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="white">
+            Slid.do
+          </Heading>
+          <Heading size={1} fit caps lineHeight={1} textColor="black">
+            NestJS
+          </Heading>
         </Slide>
 
         <Slide
@@ -1113,7 +1127,7 @@ export default class Presentation extends React.Component {
             NestJS 🚀 @nestframework by @kammysliwiec
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="20px 0 0 0" bold>
-            Confoo 2019
+            Confoo Montreal 2019
           </Text>
           <Text textColor="quaternary" textSize="2em" margin="24px 0 0 0">
             @cyril_lakech (& @lauthieb)
