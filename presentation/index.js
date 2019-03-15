@@ -363,8 +363,8 @@ export default class Presentation extends React.Component {
           <Notes>Laurent</Notes>
         </Slide>
 
-        <Slide transition={["slide"]}>
-          <Image src={getImage("controllers")} margin="16px auto" />
+        <Slide transition={["slide"]} bgImage={getImage("controllers")}>
+          {/* <Image src={getImage("controllers")} margin="16px auto" /> */}
         </Slide>
 
         <CodeSlide
